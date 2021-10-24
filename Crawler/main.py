@@ -1,4 +1,5 @@
 import requests
+import dataclasses
 import pymongo
 import datetime
 import json
@@ -49,10 +50,12 @@ async def download_month(y, m):
         #         r = await resp.text()
         r = requests.get(f'https://www.gismeteo.ru/diary/4079/{y}/{m}/', headers={'User-Agent': UserAgent().chrome})
         if r == "<Response [404]>":
+            print("ALARM")
             return None
         else:
             table = BeautifulSoup(r.text, 'lxml').find_all("table")
             if len(table) == 0:
+                print("ALARM2")
                 return None
             table = table[0]
             table_body = table.find('tbody')
@@ -81,8 +84,8 @@ async def download_year(y):
         months.append(await download_month(y,i))
     # Вариант со слишком большой скоростью скорости запросов, ошибка 503
     # months = await asyncio.gather(*[download_month(y,i) for i in range(1, 13)])
-    # with open(f'../JSONs/{y}.json', 'w', encoding='utf-8') as f:
-    #         json.dump(dataclasses.asdict(yearStruct(y, months)), f, ensure_ascii=False, indent=4)
+    with open(f'../JSONs/{y}.json', 'w', encoding='utf-8') as f:
+            json.dump(dataclasses.asdict(yearStruct(y, months)), f, ensure_ascii=False, indent=4)
     print(f'Year {y} finished')
 
 async def download_all():
