@@ -1,12 +1,12 @@
 import requests
-import dataclasses
+import pymongo
 import datetime
 import json
 import asyncio
-import aiohttp
+# import aiohttp
 import time
+import os
 
-from os import fdopen
 from dataclasses import dataclass
 from fake_useragent import UserAgent
 from bs4 import BeautifulSoup
@@ -38,17 +38,20 @@ class monthStruct:
 
 @dataclass
 class yearStruct:
+    num: int
     months: list[monthStruct]
 
 async def download_month(y, m):
     try:
-        async with aiohttp.ClientSession(headers={'User-Agent': UserAgent().chrome}) as session:
-            async with session.get(f'https://www.gismeteo.ru/diary/4079/{y}/{m}/') as resp:
-                r = await resp.text()
+        # Вариант со слишком большой скоростью скорости запросов, ошибка 503
+        # async with aiohttp.ClientSession(headers={'User-Agent': UserAgent().chrome}) as session:
+        #     async with session.get(f'https://www.gismeteo.ru/diary/4079/{y}/{m}/') as resp:
+        #         r = await resp.text()
+        r = requests.get(f'https://www.gismeteo.ru/diary/4079/{y}/{m}/', headers={'User-Agent': UserAgent().chrome})
         if r == "<Response [404]>":
             return None
         else:
-            table = BeautifulSoup(r, 'lxml').find_all("table")
+            table = BeautifulSoup(r.text, 'lxml').find_all("table")
             if len(table) == 0:
                 return None
             table = table[0]
@@ -73,16 +76,36 @@ async def download_month(y, m):
 
 async def download_year(y):
     print(f'Year {y} started')
-    months = await asyncio.gather(*[download_month(y,i) for i in range(1, 13)])
-    with open(f'../JSONs/{y}.json', 'w', encoding='utf-8') as f:
-            json.dump(dataclasses.asdict(yearStruct(months)), f, ensure_ascii=False, indent=4)
+    months = []
+    for i in range(1, 13):
+        months.append(await download_month(y,i))
+    # Вариант со слишком большой скоростью скорости запросов, ошибка 503
+    # months = await asyncio.gather(*[download_month(y,i) for i in range(1, 13)])
+    # with open(f'../JSONs/{y}.json', 'w', encoding='utf-8') as f:
+    #         json.dump(dataclasses.asdict(yearStruct(y, months)), f, ensure_ascii=False, indent=4)
     print(f'Year {y} finished')
 
 async def download_all():
     tasks = [asyncio.create_task(download_year(i)) for i in range(1997, datetime.datetime.now().year + 1)]
     await asyncio.gather(*tasks)
 
-print("Started")
+def upload_all():
+    client = pymongo.MongoClient('localhost', 27017)
+    db = client["WeatherSPb"]
+    bulk = []
+    for root, dirs, files in os.walk("../JSONs"):
+        for name in files:
+            with open(os.path.join(root, name), encoding='utf-8') as file:
+                bulk.append(json.load(file))
+    # col = db[name.removesuffix('.json')]
+    col = db["Years"]
+    col.drop()
+    col.insert_many(bulk)
+            #     with open(str(i)+'.json') as file:
+            #         file_data = json.load(file)
+            
+
+print("Start downloading")
 
 try:
     Path("../JSONs").mkdir(parents=True, exist_ok=True)
@@ -94,4 +117,6 @@ loop = asyncio.get_event_loop()
 loop.run_until_complete(download_all())
 loop.run_until_complete(loop.shutdown_asyncgens())
 loop.close()
+
+upload_all()
 print("Completed. Process took: {:.2f} seconds".format(time.time() - start))
