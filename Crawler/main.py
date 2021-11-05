@@ -12,6 +12,7 @@ from dataclasses import dataclass
 from fake_useragent import UserAgent
 from bs4 import BeautifulSoup
 from pathlib import Path
+from sys import argv
 
 # @dataclass
 # class halfDay:
@@ -42,13 +43,13 @@ class yearStruct:
     num: int
     months: list[monthStruct]
 
-async def download_month(y, m):
+async def download_month(id, y, m):
     try:
         # Вариант со слишком большой скоростью скорости запросов, ошибка 503
         # async with aiohttp.ClientSession(headers={'User-Agent': UserAgent().chrome}) as session:
         #     async with session.get(f'https://www.gismeteo.ru/diary/4079/{y}/{m}/') as resp:
         #         r = await resp.text()
-        r = requests.get(f'https://www.gismeteo.ru/diary/4079/{y}/{m}/', headers={'User-Agent': UserAgent().chrome})
+        r = requests.get(f'https://www.gismeteo.ru/diary/{id}/{y}/{m}/', headers={'User-Agent': UserAgent().chrome})
         if r == "<Response [404]>":
             print("ALARM")
             return None
@@ -77,49 +78,54 @@ async def download_month(y, m):
         raise ValueError(f'Python cant download info. Last year and month: {y, m}')
     return month
 
-async def download_year(y):
+async def download_year(name, id, y):
     print(f'Year {y} started')
     months = []
     for i in range(1, 13):
-        months.append(await download_month(y,i))
+        months.append(await download_month(id,y,i))
     # Вариант со слишком большой скоростью скорости запросов, ошибка 503
     # months = await asyncio.gather(*[download_month(y,i) for i in range(1, 13)])
-    with open(f'../JSONs/{y}.json', 'w', encoding='utf-8') as f:
+    with open(f'../JSONs/{name}/{y}.json', 'w', encoding='utf-8') as f:
             json.dump(dataclasses.asdict(yearStruct(y, months)), f, ensure_ascii=False, indent=4)
     print(f'Year {y} finished')
 
-async def download_all():
-    tasks = [asyncio.create_task(download_year(i)) for i in range(1997, datetime.datetime.now().year + 1)]
+async def download_all(name, id):
+    tasks = [asyncio.create_task(download_year(name, id, i)) for i in range(1997, datetime.datetime.now().year + 1)]
     await asyncio.gather(*tasks)
 
 def upload_all():
     client = pymongo.MongoClient('localhost', 27017)
-    db = client["WeatherSPb"]
-    bulk = []
-    for root, dirs, files in os.walk("../JSONs"):
-        for name in files:
-            with open(os.path.join(root, name), encoding='utf-8') as file:
-                bulk.append(json.load(file))
-    # col = db[name.removesuffix('.json')]
-    col = db["Years"]
-    col.drop()
-    col.insert_many(bulk)
-            #     with open(str(i)+'.json') as file:
-            #         file_data = json.load(file)
+    db = client['Weather']
+    for root, dirs, f in os.walk(f"../JSONs"):
+        for dir in dirs:
+            bulk = []
+            path = os.path.join(root, dir)
+            files = os.listdir(path)
+            for name in files:
+                with open(os.path.join(path, name), encoding='utf-8') as file:
+                    bulk.append(json.load(file))
+            col = db[f"{dir.replace(' ', '_')}"]
+            col.drop()
+            col.insert_many(bulk)
+            
             
 
-print("Start downloading")
-
-try:
-    Path("../JSONs").mkdir(parents=True, exist_ok=True)
-except:
-    raise ValueError('Python cant create folder')
-
+print("Started")
 start = time.time()
-loop = asyncio.get_event_loop()
-loop.run_until_complete(download_all())
-loop.run_until_complete(loop.shutdown_asyncgens())
-loop.close()
+if 'download' in argv:
+    try:
+        Path("../JSONs").mkdir(parents=True, exist_ok=True)
+    except:
+        raise ValueError('Python cant create folder')
+    with open(Path("./cities.txt"), encoding='utf-8') as file:
+        cities = file.readlines()
 
-upload_all()
+    for city in cities:
+        id, *name = city.split(' ', maxsplit = 1)
+        name = name[0].strip('\n').split(', ')[0]
+        Path(f"../JSONs/{name}").mkdir(parents=True, exist_ok=True)
+        loop = asyncio.get_event_loop()
+        loop.run_until_complete(download_all(name, id))
+if 'save' in argv:
+    upload_all()
 print("Completed. Process took: {:.2f} seconds".format(time.time() - start))

@@ -1,0 +1,37 @@
+{
+    "num": 2005,
+    "months": [
+        null,
+        null,
+        null,
+        null,
+        {
+            "num": 5,
+            "days": [
+                {
+                    "num": "25",
+                    "temp": "0",
+                    "press": "756",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 3м/с"
+                },
+                {
+                    "num": "25.5",
+                    "temp": "",
+                    "press": "",
+                    "cloud": "",
+                    "extra": "",
+                    "wind": ""
+                }
+            ]
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+    ]
+}

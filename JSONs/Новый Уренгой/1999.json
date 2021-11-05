@@ -1,0 +1,69 @@
+{
+    "num": 1999,
+    "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+            "num": 12,
+            "days": [
+                {
+                    "num": "29",
+                    "temp": "-38",
+                    "press": "772",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СЗ 2м/с"
+                },
+                {
+                    "num": "29.5",
+                    "temp": "-38",
+                    "press": "773",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СЗ 2м/с"
+                },
+                {
+                    "num": "30",
+                    "temp": "-38",
+                    "press": "774",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СЗ 2м/с"
+                },
+                {
+                    "num": "30.5",
+                    "temp": "-38",
+                    "press": "774",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СЗ 2м/с"
+                },
+                {
+                    "num": "31",
+                    "temp": "-36",
+                    "press": "774",
+                    "cloud": "sunc",
+                    "extra": "",
+                    "wind": "З 1м/с"
+                },
+                {
+                    "num": "31.5",
+                    "temp": "-38",
+                    "press": "773",
+                    "cloud": "sunc",
+                    "extra": "",
+                    "wind": "З 1м/с"
+                }
+            ]
+        }
+    ]
+}

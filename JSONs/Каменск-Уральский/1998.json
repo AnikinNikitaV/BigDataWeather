@@ -1,0 +1,37 @@
+{
+    "num": 1998,
+    "months": [
+        {
+            "num": 1,
+            "days": [
+                {
+                    "num": "9",
+                    "temp": "",
+                    "press": "",
+                    "cloud": "",
+                    "extra": "",
+                    "wind": ""
+                },
+                {
+                    "num": "9.5",
+                    "temp": "0",
+                    "press": "750",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "Ш"
+                }
+            ]
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+    ]
+}

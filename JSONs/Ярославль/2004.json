@@ -1,0 +1,37 @@
+{
+    "num": 2004,
+    "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+            "num": 12,
+            "days": [
+                {
+                    "num": "31",
+                    "temp": "",
+                    "press": "",
+                    "cloud": "",
+                    "extra": "",
+                    "wind": ""
+                },
+                {
+                    "num": "31.5",
+                    "temp": "0",
+                    "press": "744",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "Ш"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "num": 2000,
+    "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+            "num": 9,
+            "days": [
+                {
+                    "num": "13",
+                    "temp": "0",
+                    "press": "740",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "СЗ 3м/с"
+                },
+                {
+                    "num": "13.5",
+                    "temp": "",
+                    "press": "",
+                    "cloud": "",
+                    "extra": "",
+                    "wind": ""
+                }
+            ]
+        },
+        null,
+        null,
+        null
+    ]
+}

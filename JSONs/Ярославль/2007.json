@@ -1,0 +1,37 @@
+{
+    "num": 2007,
+    "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+            "num": 11,
+            "days": [
+                {
+                    "num": "16",
+                    "temp": "",
+                    "press": "",
+                    "cloud": "",
+                    "extra": "",
+                    "wind": ""
+                },
+                {
+                    "num": "16.5",
+                    "temp": "0",
+                    "press": "750",
+                    "cloud": "sunc",
+                    "extra": "",
+                    "wind": "Ш"
+                }
+            ]
+        },
+        null
+    ]
+}

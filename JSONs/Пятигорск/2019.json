@@ -1,0 +1,5905 @@
+{
+    "num": 2019,
+    "months": [
+        {
+            "num": 1,
+            "days": [
+                {
+                    "num": "1",
+                    "temp": "+5",
+                    "press": "740",
+                    "cloud": "sunc",
+                    "extra": "",
+                    "wind": "С 1м/с"
+                },
+                {
+                    "num": "1.5",
+                    "temp": "-2",
+                    "press": "740",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "С 1м/с"
+                },
+                {
+                    "num": "2",
+                    "temp": "+1",
+                    "press": "735",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "2.5",
+                    "temp": "+1",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "3",
+                    "temp": "+2",
+                    "press": "733",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "3.5",
+                    "temp": "+2",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "4",
+                    "temp": "+2",
+                    "press": "730",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "4.5",
+                    "temp": "+1",
+                    "press": "731",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "5",
+                    "temp": "+1",
+                    "press": "737",
+                    "cloud": "dull",
+                    "extra": "snow",
+                    "wind": "СВ 1м/с"
+                },
+                {
+                    "num": "5.5",
+                    "temp": "-1",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 1м/с"
+                },
+                {
+                    "num": "6",
+                    "temp": "0",
+                    "press": "729",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "6.5",
+                    "temp": "0",
+                    "press": "728",
+                    "cloud": "dull",
+                    "extra": "snow",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "7",
+                    "temp": "-2",
+                    "press": "732",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "7.5",
+                    "temp": "-3",
+                    "press": "736",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "8",
+                    "temp": "-3",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "8.5",
+                    "temp": "-4",
+                    "press": "732",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "9",
+                    "temp": "-1",
+                    "press": "733",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "9.5",
+                    "temp": "-1",
+                    "press": "737",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "10",
+                    "temp": "+3",
+                    "press": "739",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "10.5",
+                    "temp": "-3",
+                    "press": "737",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "11",
+                    "temp": "-3",
+                    "press": "736",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "11.5",
+                    "temp": "-3",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "12",
+                    "temp": "+6",
+                    "press": "731",
+                    "cloud": "sunc",
+                    "extra": "",
+                    "wind": "З 3м/с"
+                },
+                {
+                    "num": "12.5",
+                    "temp": "+3",
+                    "press": "732",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 3м/с"
+                },
+                {
+                    "num": "13",
+                    "temp": "+3",
+                    "press": "728",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 3м/с"
+                },
+                {
+                    "num": "13.5",
+                    "temp": "+2",
+                    "press": "729",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 3м/с"
+                },
+                {
+                    "num": "14",
+                    "temp": "+4",
+                    "press": "726",
+                    "cloud": "sunc",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "14.5",
+                    "temp": "-2",
+                    "press": "727",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "15",
+                    "temp": "+3",
+                    "press": "726",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 1м/с"
+                },
+                {
+                    "num": "15.5",
+                    "temp": "-1",
+                    "press": "724",
+                    "cloud": "—",
+                    "extra": "",
+                    "wind": "СВ 1м/с"
+                },
+                {
+                    "num": "16",
+                    "temp": "+2",
+                    "press": "726",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 7м/с"
+                },
+                {
+                    "num": "16.5",
+                    "temp": "0",
+                    "press": "731",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 7м/с"
+                },
+                {
+                    "num": "17",
+                    "temp": "+1",
+                    "press": "736",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "17.5",
+                    "temp": "-4",
+                    "press": "738",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "18",
+                    "temp": "+7",
+                    "press": "738",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 1м/с"
+                },
+                {
+                    "num": "18.5",
+                    "temp": "-1",
+                    "press": "738",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 1м/с"
+                },
+                {
+                    "num": "19",
+                    "temp": "+9",
+                    "press": "736",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 1м/с"
+                },
+                {
+                    "num": "19.5",
+                    "temp": "-2",
+                    "press": "737",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 1м/с"
+                },
+                {
+                    "num": "20",
+                    "temp": "+3",
+                    "press": "740",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "20.5",
+                    "temp": "+1",
+                    "press": "740",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "21",
+                    "temp": "+2",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "21.5",
+                    "temp": "-1",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "22",
+                    "temp": "+2",
+                    "press": "736",
+                    "cloud": "dull",
+                    "extra": "rain",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "22.5",
+                    "temp": "-2",
+                    "press": "738",
+                    "cloud": "dull",
+                    "extra": "snow",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "23",
+                    "temp": "-3",
+                    "press": "737",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 6м/с"
+                },
+                {
+                    "num": "23.5",
+                    "temp": "-3",
+                    "press": "737",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 6м/с"
+                },
+                {
+                    "num": "24",
+                    "temp": "-1",
+                    "press": "733",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "24.5",
+                    "temp": "-1",
+                    "press": "731",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "25",
+                    "temp": "+1",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "25.5",
+                    "temp": "+2",
+                    "press": "737",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "26",
+                    "temp": "+2",
+                    "press": "733",
+                    "cloud": "dull",
+                    "extra": "rain",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "26.5",
+                    "temp": "0",
+                    "press": "732",
+                    "cloud": "dull",
+                    "extra": "rain",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "27",
+                    "temp": "+1",
+                    "press": "728",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "27.5",
+                    "temp": "0",
+                    "press": "728",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "28",
+                    "temp": "+9",
+                    "press": "731",
+                    "cloud": "sunc",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "28.5",
+                    "temp": "+5",
+                    "press": "733",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "29",
+                    "temp": "+9",
+                    "press": "735",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "29.5",
+                    "temp": "+3",
+                    "press": "737",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "30",
+                    "temp": "+2",
+                    "press": "736",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "30.5",
+                    "temp": "+2",
+                    "press": "735",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "31",
+                    "temp": "+1",
+                    "press": "735",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "31.5",
+                    "temp": "+1",
+                    "press": "735",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                }
+            ]
+        },
+        {
+            "num": 2,
+            "days": [
+                {
+                    "num": "1",
+                    "temp": "+2",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "1.5",
+                    "temp": "+1",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "2",
+                    "temp": "+7",
+                    "press": "737",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 1м/с"
+                },
+                {
+                    "num": "2.5",
+                    "temp": "+4",
+                    "press": "739",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 1м/с"
+                },
+                {
+                    "num": "3",
+                    "temp": "+8",
+                    "press": "742",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "3.5",
+                    "temp": "+4",
+                    "press": "743",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "4",
+                    "temp": "+6",
+                    "press": "744",
+                    "cloud": "sunc",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "4.5",
+                    "temp": "+2",
+                    "press": "744",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "5",
+                    "temp": "-2",
+                    "press": "743",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "5.5",
+                    "temp": "-1",
+                    "press": "742",
+                    "cloud": "sunc",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "6",
+                    "temp": "+2",
+                    "press": "737",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "6.5",
+                    "temp": "-1",
+                    "press": "736",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "7",
+                    "temp": "+11",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "7.5",
+                    "temp": "+3",
+                    "press": "737",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "8",
+                    "temp": "+1",
+                    "press": "738",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 4м/с"
+                },
+                {
+                    "num": "8.5",
+                    "temp": "0",
+                    "press": "739",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 4м/с"
+                },
+                {
+                    "num": "9",
+                    "temp": "+1",
+                    "press": "737",
+                    "cloud": "dull",
+                    "extra": "rain",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "9.5",
+                    "temp": "-1",
+                    "press": "738",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "10",
+                    "temp": "+2",
+                    "press": "737",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "10.5",
+                    "temp": "+2",
+                    "press": "738",
+                    "cloud": "dull",
+                    "extra": "rain",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "11",
+                    "temp": "+7",
+                    "press": "738",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "11.5",
+                    "temp": "+4",
+                    "press": "739",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "12",
+                    "temp": "+2",
+                    "press": "737",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 6м/с"
+                },
+                {
+                    "num": "12.5",
+                    "temp": "+2",
+                    "press": "737",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 6м/с"
+                },
+                {
+                    "num": "13",
+                    "temp": "+2",
+                    "press": "740",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "13.5",
+                    "temp": "0",
+                    "press": "740",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "14",
+                    "temp": "+4",
+                    "press": "739",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СЗ 6м/с"
+                },
+                {
+                    "num": "14.5",
+                    "temp": "0",
+                    "press": "739",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СЗ 6м/с"
+                },
+                {
+                    "num": "15",
+                    "temp": "-1",
+                    "press": "739",
+                    "cloud": "—",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "15.5",
+                    "temp": "-1",
+                    "press": "739",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "16",
+                    "temp": "+7",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 3м/с"
+                },
+                {
+                    "num": "16.5",
+                    "temp": "",
+                    "press": "",
+                    "cloud": "",
+                    "extra": "",
+                    "wind": ""
+                },
+                {
+                    "num": "17",
+                    "temp": "+10",
+                    "press": "733",
+                    "cloud": "sunc",
+                    "extra": "",
+                    "wind": "З 4м/с"
+                },
+                {
+                    "num": "17.5",
+                    "temp": "+7",
+                    "press": "731",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 4м/с"
+                },
+                {
+                    "num": "18",
+                    "temp": "+4",
+                    "press": "730",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 8м/с"
+                },
+                {
+                    "num": "18.5",
+                    "temp": "+2",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 8м/с"
+                },
+                {
+                    "num": "19",
+                    "temp": "+5",
+                    "press": "740",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 5м/с"
+                },
+                {
+                    "num": "19.5",
+                    "temp": "-4",
+                    "press": "743",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 5м/с"
+                },
+                {
+                    "num": "20",
+                    "temp": "+8",
+                    "press": "737",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "20.5",
+                    "temp": "0",
+                    "press": "736",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "21",
+                    "temp": "+13",
+                    "press": "733",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "С 1м/с"
+                },
+                {
+                    "num": "21.5",
+                    "temp": "+1",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "С 1м/с"
+                },
+                {
+                    "num": "22",
+                    "temp": "+6",
+                    "press": "735",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СЗ 1м/с"
+                },
+                {
+                    "num": "22.5",
+                    "temp": "+4",
+                    "press": "736",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СЗ 1м/с"
+                },
+                {
+                    "num": "23",
+                    "temp": "+7",
+                    "press": "738",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "23.5",
+                    "temp": "+3",
+                    "press": "740",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "24",
+                    "temp": "+2",
+                    "press": "743",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "С 1м/с"
+                },
+                {
+                    "num": "24.5",
+                    "temp": "-1",
+                    "press": "744",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "С 1м/с"
+                },
+                {
+                    "num": "25",
+                    "temp": "+4",
+                    "press": "739",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "25.5",
+                    "temp": "-3",
+                    "press": "737",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "26",
+                    "temp": "+7",
+                    "press": "728",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "26.5",
+                    "temp": "+4",
+                    "press": "726",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "27",
+                    "temp": "+5",
+                    "press": "726",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "27.5",
+                    "temp": "",
+                    "press": "",
+                    "cloud": "",
+                    "extra": "",
+                    "wind": ""
+                },
+                {
+                    "num": "28",
+                    "temp": "+2",
+                    "press": "727",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "28.5",
+                    "temp": "-2",
+                    "press": "726",
+                    "cloud": "sunc",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                }
+            ]
+        },
+        {
+            "num": 3,
+            "days": [
+                {
+                    "num": "1",
+                    "temp": "+10",
+                    "press": "719",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 1м/с"
+                },
+                {
+                    "num": "1.5",
+                    "temp": "+3",
+                    "press": "722",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 1м/с"
+                },
+                {
+                    "num": "2",
+                    "temp": "+4",
+                    "press": "725",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "ЮЗ 2м/с"
+                },
+                {
+                    "num": "2.5",
+                    "temp": "0",
+                    "press": "728",
+                    "cloud": "dull",
+                    "extra": "snow",
+                    "wind": "ЮЗ 2м/с"
+                },
+                {
+                    "num": "3",
+                    "temp": "+2",
+                    "press": "736",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 4м/с"
+                },
+                {
+                    "num": "3.5",
+                    "temp": "0",
+                    "press": "737",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 4м/с"
+                },
+                {
+                    "num": "4",
+                    "temp": "+5",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "ЮВ 2м/с"
+                },
+                {
+                    "num": "4.5",
+                    "temp": "-1",
+                    "press": "735",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "ЮВ 2м/с"
+                },
+                {
+                    "num": "5",
+                    "temp": "+12",
+                    "press": "733",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "ЮВ 3м/с"
+                },
+                {
+                    "num": "5.5",
+                    "temp": "+7",
+                    "press": "733",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "ЮВ 3м/с"
+                },
+                {
+                    "num": "6",
+                    "temp": "+16",
+                    "press": "732",
+                    "cloud": "sunc",
+                    "extra": "",
+                    "wind": "С 2м/с"
+                },
+                {
+                    "num": "6.5",
+                    "temp": "+8",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "С 2м/с"
+                },
+                {
+                    "num": "7",
+                    "temp": "+3",
+                    "press": "741",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "ЮЗ 3м/с"
+                },
+                {
+                    "num": "7.5",
+                    "temp": "+3",
+                    "press": "743",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "ЮЗ 3м/с"
+                },
+                {
+                    "num": "8",
+                    "temp": "+10",
+                    "press": "743",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "8.5",
+                    "temp": "+6",
+                    "press": "743",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "9",
+                    "temp": "+16",
+                    "press": "739",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "9.5",
+                    "temp": "+9",
+                    "press": "737",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "10",
+                    "temp": "+21",
+                    "press": "730",
+                    "cloud": "sunc",
+                    "extra": "",
+                    "wind": "С 2м/с"
+                },
+                {
+                    "num": "10.5",
+                    "temp": "+9",
+                    "press": "730",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "С 2м/с"
+                },
+                {
+                    "num": "11",
+                    "temp": "+16",
+                    "press": "731",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 2м/с"
+                },
+                {
+                    "num": "11.5",
+                    "temp": "+12",
+                    "press": "731",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 2м/с"
+                },
+                {
+                    "num": "12",
+                    "temp": "+17",
+                    "press": "730",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 6м/с"
+                },
+                {
+                    "num": "12.5",
+                    "temp": "+11",
+                    "press": "729",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 6м/с"
+                },
+                {
+                    "num": "13",
+                    "temp": "+10",
+                    "press": "730",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 1м/с"
+                },
+                {
+                    "num": "13.5",
+                    "temp": "+2",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "rain",
+                    "wind": "З 1м/с"
+                },
+                {
+                    "num": "14",
+                    "temp": "+5",
+                    "press": "735",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 6м/с"
+                },
+                {
+                    "num": "14.5",
+                    "temp": "+4",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 6м/с"
+                },
+                {
+                    "num": "15",
+                    "temp": "+5",
+                    "press": "730",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "15.5",
+                    "temp": "+4",
+                    "press": "731",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "16",
+                    "temp": "+9",
+                    "press": "728",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "16.5",
+                    "temp": "+6",
+                    "press": "729",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "17",
+                    "temp": "+6",
+                    "press": "730",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "С 1м/с"
+                },
+                {
+                    "num": "17.5",
+                    "temp": "+5",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "С 1м/с"
+                },
+                {
+                    "num": "18",
+                    "temp": "+9",
+                    "press": "740",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "С 1м/с"
+                },
+                {
+                    "num": "18.5",
+                    "temp": "+7",
+                    "press": "741",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "С 1м/с"
+                },
+                {
+                    "num": "19",
+                    "temp": "+10",
+                    "press": "740",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 4м/с"
+                },
+                {
+                    "num": "19.5",
+                    "temp": "+5",
+                    "press": "741",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 4м/с"
+                },
+                {
+                    "num": "20",
+                    "temp": "+13",
+                    "press": "738",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "20.5",
+                    "temp": "+7",
+                    "press": "739",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "21",
+                    "temp": "+16",
+                    "press": "737",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 4м/с"
+                },
+                {
+                    "num": "21.5",
+                    "temp": "+9",
+                    "press": "739",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 4м/с"
+                },
+                {
+                    "num": "22",
+                    "temp": "+6",
+                    "press": "737",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "ЮЗ 5м/с"
+                },
+                {
+                    "num": "22.5",
+                    "temp": "+6",
+                    "press": "737",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "ЮЗ 5м/с"
+                },
+                {
+                    "num": "23",
+                    "temp": "+3",
+                    "press": "732",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 3м/с"
+                },
+                {
+                    "num": "23.5",
+                    "temp": "+1",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 3м/с"
+                },
+                {
+                    "num": "24",
+                    "temp": "+8",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 3м/с"
+                },
+                {
+                    "num": "24.5",
+                    "temp": "+4",
+                    "press": "735",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 3м/с"
+                },
+                {
+                    "num": "25",
+                    "temp": "+12",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 1м/с"
+                },
+                {
+                    "num": "25.5",
+                    "temp": "+5",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 1м/с"
+                },
+                {
+                    "num": "26",
+                    "temp": "+14",
+                    "press": "732",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "26.5",
+                    "temp": "+6",
+                    "press": "733",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "27",
+                    "temp": "+17",
+                    "press": "732",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 4м/с"
+                },
+                {
+                    "num": "27.5",
+                    "temp": "+10",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 4м/с"
+                },
+                {
+                    "num": "28",
+                    "temp": "+4",
+                    "press": "737",
+                    "cloud": "dull",
+                    "extra": "rain",
+                    "wind": "ЮЗ 3м/с"
+                },
+                {
+                    "num": "28.5",
+                    "temp": "+4",
+                    "press": "739",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "ЮЗ 3м/с"
+                },
+                {
+                    "num": "29",
+                    "temp": "+6",
+                    "press": "739",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "29.5",
+                    "temp": "+3",
+                    "press": "739",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "30",
+                    "temp": "+12",
+                    "press": "738",
+                    "cloud": "sunc",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "30.5",
+                    "temp": "+2",
+                    "press": "740",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "31",
+                    "temp": "+14",
+                    "press": "735",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 7м/с"
+                },
+                {
+                    "num": "31.5",
+                    "temp": "+8",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 7м/с"
+                }
+            ]
+        },
+        {
+            "num": 4,
+            "days": [
+                {
+                    "num": "1",
+                    "temp": "+6",
+                    "press": "729",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 1м/с"
+                },
+                {
+                    "num": "1.5",
+                    "temp": "+6",
+                    "press": "728",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 1м/с"
+                },
+                {
+                    "num": "2",
+                    "temp": "+5",
+                    "press": "730",
+                    "cloud": "dull",
+                    "extra": "rain",
+                    "wind": "З 5м/с"
+                },
+                {
+                    "num": "2.5",
+                    "temp": "+3",
+                    "press": "733",
+                    "cloud": "dull",
+                    "extra": "rain",
+                    "wind": "З 5м/с"
+                },
+                {
+                    "num": "3",
+                    "temp": "+9",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "3.5",
+                    "temp": "+6",
+                    "press": "736",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "4",
+                    "temp": "+10",
+                    "press": "737",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "4.5",
+                    "temp": "+8",
+                    "press": "737",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "5",
+                    "temp": "+14",
+                    "press": "737",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 4м/с"
+                },
+                {
+                    "num": "5.5",
+                    "temp": "+8",
+                    "press": "738",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 4м/с"
+                },
+                {
+                    "num": "6",
+                    "temp": "+15",
+                    "press": "736",
+                    "cloud": "sunc",
+                    "extra": "",
+                    "wind": "СВ 5м/с"
+                },
+                {
+                    "num": "6.5",
+                    "temp": "+8",
+                    "press": "736",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 5м/с"
+                },
+                {
+                    "num": "7",
+                    "temp": "+20",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "7.5",
+                    "temp": "+9",
+                    "press": "735",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "8",
+                    "temp": "+17",
+                    "press": "731",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "8.5",
+                    "temp": "+11",
+                    "press": "732",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "9",
+                    "temp": "+19",
+                    "press": "729",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "9.5",
+                    "temp": "+13",
+                    "press": "730",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "10",
+                    "temp": "+15",
+                    "press": "730",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "СВ 5м/с"
+                },
+                {
+                    "num": "10.5",
+                    "temp": "+11",
+                    "press": "731",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 5м/с"
+                },
+                {
+                    "num": "11",
+                    "temp": "+17",
+                    "press": "731",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "ЮЗ 1м/с"
+                },
+                {
+                    "num": "11.5",
+                    "temp": "+11",
+                    "press": "733",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "ЮЗ 1м/с"
+                },
+                {
+                    "num": "12",
+                    "temp": "+20",
+                    "press": "732",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СЗ 2м/с"
+                },
+                {
+                    "num": "12.5",
+                    "temp": "+12",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СЗ 2м/с"
+                },
+                {
+                    "num": "13",
+                    "temp": "+20",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "13.5",
+                    "temp": "+13",
+                    "press": "735",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "14",
+                    "temp": "+19",
+                    "press": "731",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "14.5",
+                    "temp": "+14",
+                    "press": "730",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "15",
+                    "temp": "+16",
+                    "press": "732",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СЗ 2м/с"
+                },
+                {
+                    "num": "15.5",
+                    "temp": "+10",
+                    "press": "732",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СЗ 2м/с"
+                },
+                {
+                    "num": "16",
+                    "temp": "+17",
+                    "press": "731",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 3м/с"
+                },
+                {
+                    "num": "16.5",
+                    "temp": "+11",
+                    "press": "732",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "З 3м/с"
+                },
+                {
+                    "num": "17",
+                    "temp": "+14",
+                    "press": "729",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "17.5",
+                    "temp": "+6",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "rain",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "18",
+                    "temp": "+4",
+                    "press": "738",
+                    "cloud": "dull",
+                    "extra": "rain",
+                    "wind": "ЮВ 1м/с"
+                },
+                {
+                    "num": "18.5",
+                    "temp": "+4",
+                    "press": "739",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "ЮВ 1м/с"
+                },
+                {
+                    "num": "19",
+                    "temp": "+5",
+                    "press": "737",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "19.5",
+                    "temp": "+5",
+                    "press": "738",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "20",
+                    "temp": "+7",
+                    "press": "738",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "20.5",
+                    "temp": "+4",
+                    "press": "739",
+                    "cloud": "sunc",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "21",
+                    "temp": "+11",
+                    "press": "737",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 6м/с"
+                },
+                {
+                    "num": "21.5",
+                    "temp": "+8",
+                    "press": "738",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 6м/с"
+                },
+                {
+                    "num": "22",
+                    "temp": "+12",
+                    "press": "738",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "22.5",
+                    "temp": "+6",
+                    "press": "740",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "23",
+                    "temp": "+16",
+                    "press": "742",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 2м/с"
+                },
+                {
+                    "num": "23.5",
+                    "temp": "+6",
+                    "press": "743",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 2м/с"
+                },
+                {
+                    "num": "24",
+                    "temp": "+18",
+                    "press": "742",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "24.5",
+                    "temp": "+12",
+                    "press": "742",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "25",
+                    "temp": "+22",
+                    "press": "741",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 1м/с"
+                },
+                {
+                    "num": "25.5",
+                    "temp": "+11",
+                    "press": "741",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 1м/с"
+                },
+                {
+                    "num": "26",
+                    "temp": "+23",
+                    "press": "737",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "26.5",
+                    "temp": "+13",
+                    "press": "737",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "27",
+                    "temp": "+25",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "27.5",
+                    "temp": "+14",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "28",
+                    "temp": "+24",
+                    "press": "731",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "28.5",
+                    "temp": "+16",
+                    "press": "731",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "29",
+                    "temp": "+25",
+                    "press": "732",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СЗ 2м/с"
+                },
+                {
+                    "num": "29.5",
+                    "temp": "+14",
+                    "press": "735",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СЗ 2м/с"
+                },
+                {
+                    "num": "30",
+                    "temp": "+25",
+                    "press": "733",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "С 2м/с"
+                },
+                {
+                    "num": "30.5",
+                    "temp": "+16",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "С 2м/с"
+                }
+            ]
+        },
+        {
+            "num": 5,
+            "days": [
+                {
+                    "num": "1",
+                    "temp": "+27",
+                    "press": "730",
+                    "cloud": "sunc",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "1.5",
+                    "temp": "+17",
+                    "press": "731",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "2",
+                    "temp": "+21",
+                    "press": "728",
+                    "cloud": "dull",
+                    "extra": "rain",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "2.5",
+                    "temp": "+17",
+                    "press": "728",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "3",
+                    "temp": "+16",
+                    "press": "732",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 3м/с"
+                },
+                {
+                    "num": "3.5",
+                    "temp": "+12",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 3м/с"
+                },
+                {
+                    "num": "4",
+                    "temp": "+11",
+                    "press": "735",
+                    "cloud": "dull",
+                    "extra": "rain",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "4.5",
+                    "temp": "+11",
+                    "press": "736",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "5",
+                    "temp": "+17",
+                    "press": "735",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "5.5",
+                    "temp": "+12",
+                    "press": "735",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "6",
+                    "temp": "+22",
+                    "press": "732",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "6.5",
+                    "temp": "+16",
+                    "press": "731",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "7",
+                    "temp": "+22",
+                    "press": "730",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "7.5",
+                    "temp": "+14",
+                    "press": "730",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "8",
+                    "temp": "+21",
+                    "press": "728",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 1м/с"
+                },
+                {
+                    "num": "8.5",
+                    "temp": "+17",
+                    "press": "728",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 1м/с"
+                },
+                {
+                    "num": "9",
+                    "temp": "+20",
+                    "press": "733",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СЗ 2м/с"
+                },
+                {
+                    "num": "9.5",
+                    "temp": "+16",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СЗ 2м/с"
+                },
+                {
+                    "num": "10",
+                    "temp": "+20",
+                    "press": "732",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "10.5",
+                    "temp": "+15",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "11",
+                    "temp": "+22",
+                    "press": "734",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "11.5",
+                    "temp": "+14",
+                    "press": "735",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "12",
+                    "temp": "+25",
+                    "press": "734",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "12.5",
+                    "temp": "+16",
+                    "press": "737",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "13",
+                    "temp": "+20",
+                    "press": "737",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "13.5",
+                    "temp": "+15",
+                    "press": "737",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "14",
+                    "temp": "+25",
+                    "press": "736",
+                    "cloud": "sunc",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "14.5",
+                    "temp": "+15",
+                    "press": "737",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "15",
+                    "temp": "+28",
+                    "press": "735",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "15.5",
+                    "temp": "+18",
+                    "press": "736",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "16",
+                    "temp": "+28",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "16.5",
+                    "temp": "+21",
+                    "press": "733",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "17",
+                    "temp": "+30",
+                    "press": "731",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 5м/с"
+                },
+                {
+                    "num": "17.5",
+                    "temp": "+19",
+                    "press": "731",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 5м/с"
+                },
+                {
+                    "num": "18",
+                    "temp": "+27",
+                    "press": "729",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 5м/с"
+                },
+                {
+                    "num": "18.5",
+                    "temp": "+21",
+                    "press": "729",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 5м/с"
+                },
+                {
+                    "num": "19",
+                    "temp": "+23",
+                    "press": "731",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "19.5",
+                    "temp": "+20",
+                    "press": "732",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "20",
+                    "temp": "+22",
+                    "press": "735",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "20.5",
+                    "temp": "+17",
+                    "press": "736",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "21",
+                    "temp": "+26",
+                    "press": "736",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "21.5",
+                    "temp": "+18",
+                    "press": "737",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "22",
+                    "temp": "+17",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "rain",
+                    "wind": "Ю 1м/с"
+                },
+                {
+                    "num": "22.5",
+                    "temp": "+15",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "Ю 1м/с"
+                },
+                {
+                    "num": "23",
+                    "temp": "+19",
+                    "press": "731",
+                    "cloud": "dull",
+                    "extra": "storm",
+                    "wind": "С 1м/с"
+                },
+                {
+                    "num": "23.5",
+                    "temp": "+16",
+                    "press": "733",
+                    "cloud": "dull",
+                    "extra": "rain",
+                    "wind": "С 1м/с"
+                },
+                {
+                    "num": "24",
+                    "temp": "+26",
+                    "press": "731",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 2м/с"
+                },
+                {
+                    "num": "24.5",
+                    "temp": "+19",
+                    "press": "731",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 2м/с"
+                },
+                {
+                    "num": "25",
+                    "temp": "+28",
+                    "press": "727",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "25.5",
+                    "temp": "+17",
+                    "press": "731",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "26",
+                    "temp": "+17",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 1м/с"
+                },
+                {
+                    "num": "26.5",
+                    "temp": "+15",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 1м/с"
+                },
+                {
+                    "num": "27",
+                    "temp": "+21",
+                    "press": "736",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "З 3м/с"
+                },
+                {
+                    "num": "27.5",
+                    "temp": "+16",
+                    "press": "738",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 3м/с"
+                },
+                {
+                    "num": "28",
+                    "temp": "+26",
+                    "press": "737",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "СВ 1м/с"
+                },
+                {
+                    "num": "28.5",
+                    "temp": "+17",
+                    "press": "738",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 1м/с"
+                },
+                {
+                    "num": "29",
+                    "temp": "+29",
+                    "press": "737",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 4м/с"
+                },
+                {
+                    "num": "29.5",
+                    "temp": "+19",
+                    "press": "737",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 4м/с"
+                },
+                {
+                    "num": "30",
+                    "temp": "+32",
+                    "press": "736",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 6м/с"
+                },
+                {
+                    "num": "30.5",
+                    "temp": "+21",
+                    "press": "736",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 6м/с"
+                },
+                {
+                    "num": "31",
+                    "temp": "+32",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 4м/с"
+                },
+                {
+                    "num": "31.5",
+                    "temp": "+21",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 4м/с"
+                }
+            ]
+        },
+        {
+            "num": 6,
+            "days": [
+                {
+                    "num": "1",
+                    "temp": "+34",
+                    "press": "733",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "1.5",
+                    "temp": "+22",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "2",
+                    "temp": "+35",
+                    "press": "733",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 2м/с"
+                },
+                {
+                    "num": "2.5",
+                    "temp": "+24",
+                    "press": "733",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 2м/с"
+                },
+                {
+                    "num": "3",
+                    "temp": "+32",
+                    "press": "732",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "3.5",
+                    "temp": "+22",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "4",
+                    "temp": "+23",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "storm",
+                    "wind": "Ю 1м/с"
+                },
+                {
+                    "num": "4.5",
+                    "temp": "+21",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "Ю 1м/с"
+                },
+                {
+                    "num": "5",
+                    "temp": "+28",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "5.5",
+                    "temp": "+20",
+                    "press": "737",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "6",
+                    "temp": "+24",
+                    "press": "736",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "6.5",
+                    "temp": "+19",
+                    "press": "737",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "7",
+                    "temp": "+29",
+                    "press": "735",
+                    "cloud": "—",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "7.5",
+                    "temp": "+19",
+                    "press": "737",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "8",
+                    "temp": "+29",
+                    "press": "737",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 4м/с"
+                },
+                {
+                    "num": "8.5",
+                    "temp": "+21",
+                    "press": "737",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 4м/с"
+                },
+                {
+                    "num": "9",
+                    "temp": "+32",
+                    "press": "737",
+                    "cloud": "sunc",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "9.5",
+                    "temp": "+23",
+                    "press": "736",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "10",
+                    "temp": "+31",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 4м/с"
+                },
+                {
+                    "num": "10.5",
+                    "temp": "+25",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 4м/с"
+                },
+                {
+                    "num": "11",
+                    "temp": "+31",
+                    "press": "731",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "11.5",
+                    "temp": "+25",
+                    "press": "731",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "12",
+                    "temp": "+29",
+                    "press": "730",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "12.5",
+                    "temp": "+24",
+                    "press": "731",
+                    "cloud": "dull",
+                    "extra": "rain",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "13",
+                    "temp": "+30",
+                    "press": "731",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "13.5",
+                    "temp": "+19",
+                    "press": "732",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "14",
+                    "temp": "+34",
+                    "press": "733",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "14.5",
+                    "temp": "+24",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "15",
+                    "temp": "+32",
+                    "press": "731",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "15.5",
+                    "temp": "+25",
+                    "press": "731",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "16",
+                    "temp": "+32",
+                    "press": "730",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 2м/с"
+                },
+                {
+                    "num": "16.5",
+                    "temp": "+23",
+                    "press": "730",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 2м/с"
+                },
+                {
+                    "num": "17",
+                    "temp": "+22",
+                    "press": "731",
+                    "cloud": "dull",
+                    "extra": "storm",
+                    "wind": "Ю 2м/с"
+                },
+                {
+                    "num": "17.5",
+                    "temp": "+22",
+                    "press": "731",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "Ю 2м/с"
+                },
+                {
+                    "num": "18",
+                    "temp": "+33",
+                    "press": "731",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "СВ 1м/с"
+                },
+                {
+                    "num": "18.5",
+                    "temp": "+25",
+                    "press": "731",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "СВ 1м/с"
+                },
+                {
+                    "num": "19",
+                    "temp": "+34",
+                    "press": "730",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "19.5",
+                    "temp": "+24",
+                    "press": "730",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "20",
+                    "temp": "+35",
+                    "press": "728",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 4м/с"
+                },
+                {
+                    "num": "20.5",
+                    "temp": "+26",
+                    "press": "729",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 4м/с"
+                },
+                {
+                    "num": "21",
+                    "temp": "+29",
+                    "press": "732",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "ЮВ 3м/с"
+                },
+                {
+                    "num": "21.5",
+                    "temp": "+23",
+                    "press": "733",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "ЮВ 3м/с"
+                },
+                {
+                    "num": "22",
+                    "temp": "+34",
+                    "press": "732",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "22.5",
+                    "temp": "+26",
+                    "press": "732",
+                    "cloud": "sunc",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "23",
+                    "temp": "+37",
+                    "press": "731",
+                    "cloud": "sunc",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "23.5",
+                    "temp": "+25",
+                    "press": "733",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "24",
+                    "temp": "+32",
+                    "press": "733",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "С 1м/с"
+                },
+                {
+                    "num": "24.5",
+                    "temp": "+27",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "С 1м/с"
+                },
+                {
+                    "num": "25",
+                    "temp": "+35",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "25.5",
+                    "temp": "+27",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "storm",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "26",
+                    "temp": "+34",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 2м/с"
+                },
+                {
+                    "num": "26.5",
+                    "temp": "+25",
+                    "press": "735",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 2м/с"
+                },
+                {
+                    "num": "27",
+                    "temp": "+34",
+                    "press": "729",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "27.5",
+                    "temp": "+27",
+                    "press": "729",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "28",
+                    "temp": "+34",
+                    "press": "724",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 1м/с"
+                },
+                {
+                    "num": "28.5",
+                    "temp": "+19",
+                    "press": "726",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 1м/с"
+                },
+                {
+                    "num": "29",
+                    "temp": "+19",
+                    "press": "728",
+                    "cloud": "dull",
+                    "extra": "rain",
+                    "wind": "ЮЗ 2м/с"
+                },
+                {
+                    "num": "29.5",
+                    "temp": "+17",
+                    "press": "730",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "ЮЗ 2м/с"
+                },
+                {
+                    "num": "30",
+                    "temp": "+18",
+                    "press": "731",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "Ю 3м/с"
+                },
+                {
+                    "num": "30.5",
+                    "temp": "+16",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "Ю 3м/с"
+                }
+            ]
+        },
+        {
+            "num": 7,
+            "days": [
+                {
+                    "num": "1",
+                    "temp": "+25",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 6м/с"
+                },
+                {
+                    "num": "1.5",
+                    "temp": "+22",
+                    "press": "735",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 6м/с"
+                },
+                {
+                    "num": "2",
+                    "temp": "+33",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "2.5",
+                    "temp": "+23",
+                    "press": "733",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "3",
+                    "temp": "+36",
+                    "press": "731",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "3.5",
+                    "temp": "+28",
+                    "press": "731",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "4",
+                    "temp": "+24",
+                    "press": "732",
+                    "cloud": "dull",
+                    "extra": "storm",
+                    "wind": "С 2м/с"
+                },
+                {
+                    "num": "4.5",
+                    "temp": "+21",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "С 2м/с"
+                },
+                {
+                    "num": "5",
+                    "temp": "+25",
+                    "press": "732",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 2м/с"
+                },
+                {
+                    "num": "5.5",
+                    "temp": "+19",
+                    "press": "733",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 2м/с"
+                },
+                {
+                    "num": "6",
+                    "temp": "+30",
+                    "press": "728",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 2м/с"
+                },
+                {
+                    "num": "6.5",
+                    "temp": "+20",
+                    "press": "731",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 2м/с"
+                },
+                {
+                    "num": "7",
+                    "temp": "+31",
+                    "press": "731",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "В 2м/с"
+                },
+                {
+                    "num": "7.5",
+                    "temp": "+24",
+                    "press": "731",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 2м/с"
+                },
+                {
+                    "num": "8",
+                    "temp": "+34",
+                    "press": "728",
+                    "cloud": "sunc",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "8.5",
+                    "temp": "+26",
+                    "press": "728",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "9",
+                    "temp": "+29",
+                    "press": "730",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "9.5",
+                    "temp": "+23",
+                    "press": "731",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "10",
+                    "temp": "+30",
+                    "press": "728",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "ЮВ 2м/с"
+                },
+                {
+                    "num": "10.5",
+                    "temp": "+25",
+                    "press": "728",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "ЮВ 2м/с"
+                },
+                {
+                    "num": "11",
+                    "temp": "+22",
+                    "press": "725",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "11.5",
+                    "temp": "+21",
+                    "press": "727",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "12",
+                    "temp": "+19",
+                    "press": "730",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "12.5",
+                    "temp": "+16",
+                    "press": "731",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "13",
+                    "temp": "+22",
+                    "press": "731",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 2м/с"
+                },
+                {
+                    "num": "13.5",
+                    "temp": "+18",
+                    "press": "731",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 2м/с"
+                },
+                {
+                    "num": "14",
+                    "temp": "+25",
+                    "press": "731",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "В 2м/с"
+                },
+                {
+                    "num": "14.5",
+                    "temp": "+20",
+                    "press": "731",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 2м/с"
+                },
+                {
+                    "num": "15",
+                    "temp": "+30",
+                    "press": "725",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "15.5",
+                    "temp": "+17",
+                    "press": "728",
+                    "cloud": "dull",
+                    "extra": "rain",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "16",
+                    "temp": "+28",
+                    "press": "728",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "Ю 1м/с"
+                },
+                {
+                    "num": "16.5",
+                    "temp": "+21",
+                    "press": "730",
+                    "cloud": "sunc",
+                    "extra": "",
+                    "wind": "Ю 1м/с"
+                },
+                {
+                    "num": "17",
+                    "temp": "+28",
+                    "press": "729",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 2м/с"
+                },
+                {
+                    "num": "17.5",
+                    "temp": "+24",
+                    "press": "729",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 2м/с"
+                },
+                {
+                    "num": "18",
+                    "temp": "+29",
+                    "press": "728",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "ЮЗ 2м/с"
+                },
+                {
+                    "num": "18.5",
+                    "temp": "+21",
+                    "press": "731",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "ЮЗ 2м/с"
+                },
+                {
+                    "num": "19",
+                    "temp": "+26",
+                    "press": "733",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "19.5",
+                    "temp": "+19",
+                    "press": "735",
+                    "cloud": "dull",
+                    "extra": "storm",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "20",
+                    "temp": "+27",
+                    "press": "736",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 1м/с"
+                },
+                {
+                    "num": "20.5",
+                    "temp": "+24",
+                    "press": "736",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 1м/с"
+                },
+                {
+                    "num": "21",
+                    "temp": "+32",
+                    "press": "732",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "21.5",
+                    "temp": "+27",
+                    "press": "732",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "22",
+                    "temp": "+21",
+                    "press": "735",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "22.5",
+                    "temp": "+19",
+                    "press": "735",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "23",
+                    "temp": "+22",
+                    "press": "732",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "23.5",
+                    "temp": "+19",
+                    "press": "732",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "24",
+                    "temp": "+26",
+                    "press": "729",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "24.5",
+                    "temp": "+21",
+                    "press": "731",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "25",
+                    "temp": "+26",
+                    "press": "731",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "С 1м/с"
+                },
+                {
+                    "num": "25.5",
+                    "temp": "+19",
+                    "press": "732",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "С 1м/с"
+                },
+                {
+                    "num": "26",
+                    "temp": "+28",
+                    "press": "731",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 4м/с"
+                },
+                {
+                    "num": "26.5",
+                    "temp": "+22",
+                    "press": "731",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 4м/с"
+                },
+                {
+                    "num": "27",
+                    "temp": "+28",
+                    "press": "728",
+                    "cloud": "sunc",
+                    "extra": "",
+                    "wind": "З 6м/с"
+                },
+                {
+                    "num": "27.5",
+                    "temp": "+21",
+                    "press": "729",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 6м/с"
+                },
+                {
+                    "num": "28",
+                    "temp": "+29",
+                    "press": "728",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 3м/с"
+                },
+                {
+                    "num": "28.5",
+                    "temp": "+22",
+                    "press": "729",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 3м/с"
+                },
+                {
+                    "num": "29",
+                    "temp": "",
+                    "press": "",
+                    "cloud": "",
+                    "extra": "",
+                    "wind": ""
+                },
+                {
+                    "num": "29.5",
+                    "temp": "+22",
+                    "press": "728",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "Ш"
+                },
+                {
+                    "num": "30",
+                    "temp": "",
+                    "press": "",
+                    "cloud": "",
+                    "extra": "",
+                    "wind": ""
+                },
+                {
+                    "num": "30.5",
+                    "temp": "+25",
+                    "press": "727",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "Ш"
+                },
+                {
+                    "num": "31",
+                    "temp": "+30",
+                    "press": "726",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 3м/с"
+                },
+                {
+                    "num": "31.5",
+                    "temp": "+22",
+                    "press": "728",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 3м/с"
+                }
+            ]
+        },
+        {
+            "num": 8,
+            "days": [
+                {
+                    "num": "1",
+                    "temp": "+27",
+                    "press": "730",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СЗ 2м/с"
+                },
+                {
+                    "num": "1.5",
+                    "temp": "+23",
+                    "press": "731",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СЗ 2м/с"
+                },
+                {
+                    "num": "2",
+                    "temp": "+27",
+                    "press": "729",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СЗ 1м/с"
+                },
+                {
+                    "num": "2.5",
+                    "temp": "+22",
+                    "press": "730",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СЗ 1м/с"
+                },
+                {
+                    "num": "3",
+                    "temp": "+27",
+                    "press": "729",
+                    "cloud": "sunc",
+                    "extra": "",
+                    "wind": "В 2м/с"
+                },
+                {
+                    "num": "3.5",
+                    "temp": "+23",
+                    "press": "730",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 2м/с"
+                },
+                {
+                    "num": "4",
+                    "temp": "+31",
+                    "press": "722",
+                    "cloud": "sunc",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "4.5",
+                    "temp": "+27",
+                    "press": "722",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "5",
+                    "temp": "+26",
+                    "press": "731",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "5.5",
+                    "temp": "+20",
+                    "press": "733",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "6",
+                    "temp": "+27",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 1м/с"
+                },
+                {
+                    "num": "6.5",
+                    "temp": "+21",
+                    "press": "735",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 1м/с"
+                },
+                {
+                    "num": "7",
+                    "temp": "+29",
+                    "press": "735",
+                    "cloud": "sunc",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "7.5",
+                    "temp": "+21",
+                    "press": "736",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "8",
+                    "temp": "+30",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "8.5",
+                    "temp": "+23",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "9",
+                    "temp": "+32",
+                    "press": "731",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "Ю 1м/с"
+                },
+                {
+                    "num": "9.5",
+                    "temp": "+25",
+                    "press": "731",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "Ю 1м/с"
+                },
+                {
+                    "num": "10",
+                    "temp": "+33",
+                    "press": "729",
+                    "cloud": "sunc",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "10.5",
+                    "temp": "+19",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "11",
+                    "temp": "+29",
+                    "press": "734",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "З 4м/с"
+                },
+                {
+                    "num": "11.5",
+                    "temp": "+20",
+                    "press": "736",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 4м/с"
+                },
+                {
+                    "num": "12",
+                    "temp": "+30",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "12.5",
+                    "temp": "+21",
+                    "press": "736",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "13",
+                    "temp": "+31",
+                    "press": "735",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "13.5",
+                    "temp": "+21",
+                    "press": "736",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "14",
+                    "temp": "+32",
+                    "press": "733",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 6м/с"
+                },
+                {
+                    "num": "14.5",
+                    "temp": "+24",
+                    "press": "733",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 6м/с"
+                },
+                {
+                    "num": "15",
+                    "temp": "+33",
+                    "press": "730",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 6м/с"
+                },
+                {
+                    "num": "15.5",
+                    "temp": "+24",
+                    "press": "731",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 6м/с"
+                },
+                {
+                    "num": "16",
+                    "temp": "+31",
+                    "press": "728",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "16.5",
+                    "temp": "+26",
+                    "press": "728",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "17",
+                    "temp": "+27",
+                    "press": "731",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "ЮЗ 1м/с"
+                },
+                {
+                    "num": "17.5",
+                    "temp": "+22",
+                    "press": "731",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "ЮЗ 1м/с"
+                },
+                {
+                    "num": "18",
+                    "temp": "+30",
+                    "press": "730",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "ЮЗ 2м/с"
+                },
+                {
+                    "num": "18.5",
+                    "temp": "+25",
+                    "press": "731",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "ЮЗ 2м/с"
+                },
+                {
+                    "num": "19",
+                    "temp": "+35",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 1м/с"
+                },
+                {
+                    "num": "19.5",
+                    "temp": "+25",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 1м/с"
+                },
+                {
+                    "num": "20",
+                    "temp": "+35",
+                    "press": "734",
+                    "cloud": "sunc",
+                    "extra": "",
+                    "wind": "З 1м/с"
+                },
+                {
+                    "num": "20.5",
+                    "temp": "+25",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 1м/с"
+                },
+                {
+                    "num": "21",
+                    "temp": "+35",
+                    "press": "732",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "21.5",
+                    "temp": "+27",
+                    "press": "732",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "22",
+                    "temp": "+36",
+                    "press": "731",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 5м/с"
+                },
+                {
+                    "num": "22.5",
+                    "temp": "+26",
+                    "press": "732",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 5м/с"
+                },
+                {
+                    "num": "23",
+                    "temp": "+35",
+                    "press": "731",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "23.5",
+                    "temp": "+24",
+                    "press": "732",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "24",
+                    "temp": "+34",
+                    "press": "732",
+                    "cloud": "sunc",
+                    "extra": "",
+                    "wind": "СВ 1м/с"
+                },
+                {
+                    "num": "24.5",
+                    "temp": "+27",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 1м/с"
+                },
+                {
+                    "num": "25",
+                    "temp": "+26",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "25.5",
+                    "temp": "+21",
+                    "press": "737",
+                    "cloud": "sunc",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "26",
+                    "temp": "+28",
+                    "press": "738",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "26.5",
+                    "temp": "+21",
+                    "press": "738",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "27",
+                    "temp": "+29",
+                    "press": "734",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "СВ 4м/с"
+                },
+                {
+                    "num": "27.5",
+                    "temp": "+21",
+                    "press": "735",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 4м/с"
+                },
+                {
+                    "num": "28",
+                    "temp": "+31",
+                    "press": "735",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "28.5",
+                    "temp": "+20",
+                    "press": "737",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "29",
+                    "temp": "+25",
+                    "press": "738",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 4м/с"
+                },
+                {
+                    "num": "29.5",
+                    "temp": "+17",
+                    "press": "738",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 4м/с"
+                },
+                {
+                    "num": "30",
+                    "temp": "+27",
+                    "press": "735",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 4м/с"
+                },
+                {
+                    "num": "30.5",
+                    "temp": "+19",
+                    "press": "737",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 4м/с"
+                },
+                {
+                    "num": "31",
+                    "temp": "+28",
+                    "press": "735",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "31.5",
+                    "temp": "+20",
+                    "press": "736",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                }
+            ]
+        },
+        {
+            "num": 9,
+            "days": [
+                {
+                    "num": "1",
+                    "temp": "+28",
+                    "press": "733",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "1.5",
+                    "temp": "+18",
+                    "press": "733",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "2",
+                    "temp": "+30",
+                    "press": "732",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "2.5",
+                    "temp": "+18",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "3",
+                    "temp": "+30",
+                    "press": "733",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "ЮЗ 2м/с"
+                },
+                {
+                    "num": "3.5",
+                    "temp": "+20",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "ЮЗ 2м/с"
+                },
+                {
+                    "num": "4",
+                    "temp": "+31",
+                    "press": "732",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "4.5",
+                    "temp": "+19",
+                    "press": "732",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "5",
+                    "temp": "+31",
+                    "press": "731",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 4м/с"
+                },
+                {
+                    "num": "5.5",
+                    "temp": "+22",
+                    "press": "732",
+                    "cloud": "sunc",
+                    "extra": "",
+                    "wind": "СВ 4м/с"
+                },
+                {
+                    "num": "6",
+                    "temp": "+28",
+                    "press": "733",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "6.5",
+                    "temp": "+23",
+                    "press": "733",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "7",
+                    "temp": "+15",
+                    "press": "736",
+                    "cloud": "dull",
+                    "extra": "rain",
+                    "wind": "В 1м/с"
+                },
+                {
+                    "num": "7.5",
+                    "temp": "+14",
+                    "press": "737",
+                    "cloud": "dull",
+                    "extra": "rain",
+                    "wind": "В 1м/с"
+                },
+                {
+                    "num": "8",
+                    "temp": "+22",
+                    "press": "738",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "8.5",
+                    "temp": "+15",
+                    "press": "740",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "9",
+                    "temp": "+23",
+                    "press": "737",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 7м/с"
+                },
+                {
+                    "num": "9.5",
+                    "temp": "+19",
+                    "press": "738",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 7м/с"
+                },
+                {
+                    "num": "10",
+                    "temp": "+24",
+                    "press": "737",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "СВ 6м/с"
+                },
+                {
+                    "num": "10.5",
+                    "temp": "+20",
+                    "press": "739",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 6м/с"
+                },
+                {
+                    "num": "11",
+                    "temp": "+25",
+                    "press": "740",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "В 6м/с"
+                },
+                {
+                    "num": "11.5",
+                    "temp": "+17",
+                    "press": "741",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 6м/с"
+                },
+                {
+                    "num": "12",
+                    "temp": "+25",
+                    "press": "740",
+                    "cloud": "sunc",
+                    "extra": "",
+                    "wind": "В 6м/с"
+                },
+                {
+                    "num": "12.5",
+                    "temp": "+19",
+                    "press": "740",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 6м/с"
+                },
+                {
+                    "num": "13",
+                    "temp": "+25",
+                    "press": "738",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 5м/с"
+                },
+                {
+                    "num": "13.5",
+                    "temp": "+18",
+                    "press": "739",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 5м/с"
+                },
+                {
+                    "num": "14",
+                    "temp": "+26",
+                    "press": "737",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "14.5",
+                    "temp": "+17",
+                    "press": "737",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "15",
+                    "temp": "+28",
+                    "press": "736",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "СЗ 1м/с"
+                },
+                {
+                    "num": "15.5",
+                    "temp": "+17",
+                    "press": "738",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СЗ 1м/с"
+                },
+                {
+                    "num": "16",
+                    "temp": "+27",
+                    "press": "733",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "16.5",
+                    "temp": "+18",
+                    "press": "733",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "17",
+                    "temp": "+20",
+                    "press": "732",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "Ш"
+                },
+                {
+                    "num": "17.5",
+                    "temp": "+15",
+                    "press": "732",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "Ш"
+                },
+                {
+                    "num": "18",
+                    "temp": "+29",
+                    "press": "732",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "ЮВ 1м/с"
+                },
+                {
+                    "num": "18.5",
+                    "temp": "+23",
+                    "press": "731",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "ЮВ 1м/с"
+                },
+                {
+                    "num": "19",
+                    "temp": "+21",
+                    "press": "737",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "ЮВ 1м/с"
+                },
+                {
+                    "num": "19.5",
+                    "temp": "+18",
+                    "press": "737",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "ЮВ 1м/с"
+                },
+                {
+                    "num": "20",
+                    "temp": "+22",
+                    "press": "731",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "20.5",
+                    "temp": "+19",
+                    "press": "731",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "21",
+                    "temp": "+15",
+                    "press": "735",
+                    "cloud": "sunc",
+                    "extra": "",
+                    "wind": "З 1м/с"
+                },
+                {
+                    "num": "21.5",
+                    "temp": "+8",
+                    "press": "737",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 1м/с"
+                },
+                {
+                    "num": "22",
+                    "temp": "+19",
+                    "press": "737",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 3м/с"
+                },
+                {
+                    "num": "22.5",
+                    "temp": "+12",
+                    "press": "737",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 3м/с"
+                },
+                {
+                    "num": "23",
+                    "temp": "+23",
+                    "press": "735",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СЗ 1м/с"
+                },
+                {
+                    "num": "23.5",
+                    "temp": "+13",
+                    "press": "736",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СЗ 1м/с"
+                },
+                {
+                    "num": "24",
+                    "temp": "+21",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "24.5",
+                    "temp": "+14",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "25",
+                    "temp": "+15",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "25.5",
+                    "temp": "+13",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "26",
+                    "temp": "+14",
+                    "press": "735",
+                    "cloud": "dull",
+                    "extra": "rain",
+                    "wind": "СЗ 1м/с"
+                },
+                {
+                    "num": "26.5",
+                    "temp": "+12",
+                    "press": "735",
+                    "cloud": "dull",
+                    "extra": "rain",
+                    "wind": "СЗ 1м/с"
+                },
+                {
+                    "num": "27",
+                    "temp": "+16",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "27.5",
+                    "temp": "+15",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "28",
+                    "temp": "+18",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 3м/с"
+                },
+                {
+                    "num": "28.5",
+                    "temp": "+14",
+                    "press": "742",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 3м/с"
+                },
+                {
+                    "num": "29",
+                    "temp": "+19",
+                    "press": "736",
+                    "cloud": "sunc",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "29.5",
+                    "temp": "+15",
+                    "press": "735",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "30",
+                    "temp": "+23",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 4м/с"
+                },
+                {
+                    "num": "30.5",
+                    "temp": "+15",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 4м/с"
+                }
+            ]
+        },
+        {
+            "num": 10,
+            "days": [
+                {
+                    "num": "1",
+                    "temp": "+28",
+                    "press": "731",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "С 1м/с"
+                },
+                {
+                    "num": "1.5",
+                    "temp": "+17",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "С 1м/с"
+                },
+                {
+                    "num": "2",
+                    "temp": "+26",
+                    "press": "736",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 2м/с"
+                },
+                {
+                    "num": "2.5",
+                    "temp": "+15",
+                    "press": "735",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 2м/с"
+                },
+                {
+                    "num": "3",
+                    "temp": "+23",
+                    "press": "732",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 5м/с"
+                },
+                {
+                    "num": "3.5",
+                    "temp": "+14",
+                    "press": "732",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "СВ 5м/с"
+                },
+                {
+                    "num": "4",
+                    "temp": "+30",
+                    "press": "733",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 1м/с"
+                },
+                {
+                    "num": "4.5",
+                    "temp": "+19",
+                    "press": "733",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 1м/с"
+                },
+                {
+                    "num": "5",
+                    "temp": "+29",
+                    "press": "727",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "5.5",
+                    "temp": "+19",
+                    "press": "728",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "6",
+                    "temp": "+24",
+                    "press": "725",
+                    "cloud": "sunc",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "6.5",
+                    "temp": "+13",
+                    "press": "726",
+                    "cloud": "dull",
+                    "extra": "rain",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "7",
+                    "temp": "+14",
+                    "press": "736",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 1м/с"
+                },
+                {
+                    "num": "7.5",
+                    "temp": "+13",
+                    "press": "737",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 1м/с"
+                },
+                {
+                    "num": "8",
+                    "temp": "+16",
+                    "press": "737",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "8.5",
+                    "temp": "+11",
+                    "press": "737",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "9",
+                    "temp": "+10",
+                    "press": "742",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "С 1м/с"
+                },
+                {
+                    "num": "9.5",
+                    "temp": "+10",
+                    "press": "742",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "С 1м/с"
+                },
+                {
+                    "num": "10",
+                    "temp": "+16",
+                    "press": "738",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "10.5",
+                    "temp": "+10",
+                    "press": "737",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "11",
+                    "temp": "+23",
+                    "press": "735",
+                    "cloud": "sunc",
+                    "extra": "",
+                    "wind": "Ш"
+                },
+                {
+                    "num": "11.5",
+                    "temp": "+16",
+                    "press": "736",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "Ш"
+                },
+                {
+                    "num": "12",
+                    "temp": "+16",
+                    "press": "743",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "З 3м/с"
+                },
+                {
+                    "num": "12.5",
+                    "temp": "+8",
+                    "press": "744",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 3м/с"
+                },
+                {
+                    "num": "13",
+                    "temp": "+22",
+                    "press": "743",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "ЮЗ 2м/с"
+                },
+                {
+                    "num": "13.5",
+                    "temp": "+8",
+                    "press": "743",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "ЮЗ 2м/с"
+                },
+                {
+                    "num": "14",
+                    "temp": "+23",
+                    "press": "741",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "14.5",
+                    "temp": "+14",
+                    "press": "741",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "15",
+                    "temp": "+27",
+                    "press": "738",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "С 1м/с"
+                },
+                {
+                    "num": "15.5",
+                    "temp": "+10",
+                    "press": "738",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "С 1м/с"
+                },
+                {
+                    "num": "16",
+                    "temp": "+25",
+                    "press": "737",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "16.5",
+                    "temp": "+13",
+                    "press": "740",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "17",
+                    "temp": "+17",
+                    "press": "739",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "17.5",
+                    "temp": "+11",
+                    "press": "738",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "18",
+                    "temp": "+21",
+                    "press": "736",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "18.5",
+                    "temp": "+11",
+                    "press": "737",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "19",
+                    "temp": "+24",
+                    "press": "737",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "19.5",
+                    "temp": "+12",
+                    "press": "739",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "20",
+                    "temp": "+20",
+                    "press": "740",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 4м/с"
+                },
+                {
+                    "num": "20.5",
+                    "temp": "+11",
+                    "press": "741",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 4м/с"
+                },
+                {
+                    "num": "21",
+                    "temp": "+17",
+                    "press": "741",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "21.5",
+                    "temp": "+11",
+                    "press": "740",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "22",
+                    "temp": "+17",
+                    "press": "740",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 4м/с"
+                },
+                {
+                    "num": "22.5",
+                    "temp": "+10",
+                    "press": "740",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 4м/с"
+                },
+                {
+                    "num": "23",
+                    "temp": "+19",
+                    "press": "739",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 2м/с"
+                },
+                {
+                    "num": "23.5",
+                    "temp": "+10",
+                    "press": "740",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 2м/с"
+                },
+                {
+                    "num": "24",
+                    "temp": "+20",
+                    "press": "738",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "24.5",
+                    "temp": "+10",
+                    "press": "738",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "25",
+                    "temp": "+18",
+                    "press": "737",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "25.5",
+                    "temp": "+11",
+                    "press": "737",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "26",
+                    "temp": "+14",
+                    "press": "738",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "26.5",
+                    "temp": "+10",
+                    "press": "739",
+                    "cloud": "sunc",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "27",
+                    "temp": "+19",
+                    "press": "738",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "С 1м/с"
+                },
+                {
+                    "num": "27.5",
+                    "temp": "+9",
+                    "press": "738",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "С 1м/с"
+                },
+                {
+                    "num": "28",
+                    "temp": "+22",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "С 1м/с"
+                },
+                {
+                    "num": "28.5",
+                    "temp": "+7",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "С 1м/с"
+                },
+                {
+                    "num": "29",
+                    "temp": "+18",
+                    "press": "733",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "С 1м/с"
+                },
+                {
+                    "num": "29.5",
+                    "temp": "+12",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "С 1м/с"
+                },
+                {
+                    "num": "30",
+                    "temp": "+15",
+                    "press": "733",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 4м/с"
+                },
+                {
+                    "num": "30.5",
+                    "temp": "+6",
+                    "press": "737",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 4м/с"
+                },
+                {
+                    "num": "31",
+                    "temp": "+4",
+                    "press": "739",
+                    "cloud": "dull",
+                    "extra": "rain",
+                    "wind": "СЗ 1м/с"
+                },
+                {
+                    "num": "31.5",
+                    "temp": "0",
+                    "press": "740",
+                    "cloud": "dull",
+                    "extra": "snow",
+                    "wind": "СЗ 1м/с"
+                }
+            ]
+        },
+        {
+            "num": 11,
+            "days": [
+                {
+                    "num": "1",
+                    "temp": "-1",
+                    "press": "739",
+                    "cloud": "dull",
+                    "extra": "snow",
+                    "wind": "СВ 4м/с"
+                },
+                {
+                    "num": "1.5",
+                    "temp": "-2",
+                    "press": "738",
+                    "cloud": "dull",
+                    "extra": "snow",
+                    "wind": "СВ 4м/с"
+                },
+                {
+                    "num": "2",
+                    "temp": "-1",
+                    "press": "742",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "С 1м/с"
+                },
+                {
+                    "num": "2.5",
+                    "temp": "-3",
+                    "press": "743",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "С 1м/с"
+                },
+                {
+                    "num": "3",
+                    "temp": "-1",
+                    "press": "743",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "3.5",
+                    "temp": "-2",
+                    "press": "742",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "4",
+                    "temp": "-1",
+                    "press": "740",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "ЮВ 1м/с"
+                },
+                {
+                    "num": "4.5",
+                    "temp": "-2",
+                    "press": "740",
+                    "cloud": "—",
+                    "extra": "",
+                    "wind": "ЮВ 1м/с"
+                },
+                {
+                    "num": "5",
+                    "temp": "+3",
+                    "press": "735",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 1м/с"
+                },
+                {
+                    "num": "5.5",
+                    "temp": "-2",
+                    "press": "736",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 1м/с"
+                },
+                {
+                    "num": "6",
+                    "temp": "+20",
+                    "press": "736",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 2м/с"
+                },
+                {
+                    "num": "6.5",
+                    "temp": "+11",
+                    "press": "736",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 2м/с"
+                },
+                {
+                    "num": "7",
+                    "temp": "+21",
+                    "press": "737",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "7.5",
+                    "temp": "+12",
+                    "press": "737",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "8",
+                    "temp": "+17",
+                    "press": "737",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "8.5",
+                    "temp": "+6",
+                    "press": "738",
+                    "cloud": "—",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "9",
+                    "temp": "+14",
+                    "press": "740",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 4м/с"
+                },
+                {
+                    "num": "9.5",
+                    "temp": "+8",
+                    "press": "741",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 4м/с"
+                },
+                {
+                    "num": "10",
+                    "temp": "+9",
+                    "press": "740",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "10.5",
+                    "temp": "+6",
+                    "press": "740",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "11",
+                    "temp": "+13",
+                    "press": "739",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "11.5",
+                    "temp": "+3",
+                    "press": "740",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "12",
+                    "temp": "+19",
+                    "press": "740",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "12.5",
+                    "temp": "+8",
+                    "press": "742",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "13",
+                    "temp": "+6",
+                    "press": "742",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "13.5",
+                    "temp": "+5",
+                    "press": "743",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "14",
+                    "temp": "+6",
+                    "press": "743",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "14.5",
+                    "temp": "+7",
+                    "press": "743",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "15",
+                    "temp": "+8",
+                    "press": "744",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 7м/с"
+                },
+                {
+                    "num": "15.5",
+                    "temp": "+6",
+                    "press": "744",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 7м/с"
+                },
+                {
+                    "num": "16",
+                    "temp": "+10",
+                    "press": "744",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 6м/с"
+                },
+                {
+                    "num": "16.5",
+                    "temp": "+6",
+                    "press": "744",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 6м/с"
+                },
+                {
+                    "num": "17",
+                    "temp": "+8",
+                    "press": "744",
+                    "cloud": "sunc",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "17.5",
+                    "temp": "+3",
+                    "press": "743",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "18",
+                    "temp": "+7",
+                    "press": "742",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "18.5",
+                    "temp": "+2",
+                    "press": "742",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "19",
+                    "temp": "+9",
+                    "press": "742",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "19.5",
+                    "temp": "+4",
+                    "press": "742",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "20",
+                    "temp": "+1",
+                    "press": "743",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "20.5",
+                    "temp": "0",
+                    "press": "744",
+                    "cloud": "—",
+                    "extra": "rain",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "21",
+                    "temp": "-5",
+                    "press": "747",
+                    "cloud": "dull",
+                    "extra": "snow",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "21.5",
+                    "temp": "-5",
+                    "press": "747",
+                    "cloud": "dull",
+                    "extra": "rain",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "22",
+                    "temp": "-5",
+                    "press": "748",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "22.5",
+                    "temp": "-4",
+                    "press": "748",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "23",
+                    "temp": "-3",
+                    "press": "746",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "23.5",
+                    "temp": "-2",
+                    "press": "745",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "24",
+                    "temp": "-1",
+                    "press": "745",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "24.5",
+                    "temp": "0",
+                    "press": "744",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "25",
+                    "temp": "+1",
+                    "press": "741",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 4м/с"
+                },
+                {
+                    "num": "25.5",
+                    "temp": "+1",
+                    "press": "740",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 4м/с"
+                },
+                {
+                    "num": "26",
+                    "temp": "+2",
+                    "press": "737",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "26.5",
+                    "temp": "+3",
+                    "press": "737",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "27",
+                    "temp": "+5",
+                    "press": "732",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 1м/с"
+                },
+                {
+                    "num": "27.5",
+                    "temp": "+5",
+                    "press": "732",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 1м/с"
+                },
+                {
+                    "num": "28",
+                    "temp": "+9",
+                    "press": "735",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 1м/с"
+                },
+                {
+                    "num": "28.5",
+                    "temp": "+7",
+                    "press": "736",
+                    "cloud": "dull",
+                    "extra": "rain",
+                    "wind": "З 1м/с"
+                },
+                {
+                    "num": "29",
+                    "temp": "+12",
+                    "press": "733",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "29.5",
+                    "temp": "+7",
+                    "press": "733",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "30",
+                    "temp": "+9",
+                    "press": "730",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "30.5",
+                    "temp": "+4",
+                    "press": "732",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                }
+            ]
+        },
+        {
+            "num": 12,
+            "days": [
+                {
+                    "num": "1",
+                    "temp": "+10",
+                    "press": "729",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "1.5",
+                    "temp": "+6",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "rain",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "2",
+                    "temp": "+1",
+                    "press": "743",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "Ш"
+                },
+                {
+                    "num": "2.5",
+                    "temp": "+1",
+                    "press": "742",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "Ш"
+                },
+                {
+                    "num": "3",
+                    "temp": "+1",
+                    "press": "735",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 2м/с"
+                },
+                {
+                    "num": "3.5",
+                    "temp": "0",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 2м/с"
+                },
+                {
+                    "num": "4",
+                    "temp": "-1",
+                    "press": "740",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "4.5",
+                    "temp": "-2",
+                    "press": "743",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "5",
+                    "temp": "+3",
+                    "press": "743",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "ЮЗ 2м/с"
+                },
+                {
+                    "num": "5.5",
+                    "temp": "-5",
+                    "press": "745",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "ЮЗ 2м/с"
+                },
+                {
+                    "num": "6",
+                    "temp": "+7",
+                    "press": "743",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "Ш"
+                },
+                {
+                    "num": "6.5",
+                    "temp": "-4",
+                    "press": "743",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "Ш"
+                },
+                {
+                    "num": "7",
+                    "temp": "+5",
+                    "press": "738",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "7.5",
+                    "temp": "-2",
+                    "press": "737",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "8",
+                    "temp": "+7",
+                    "press": "733",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 3м/с"
+                },
+                {
+                    "num": "8.5",
+                    "temp": "+1",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 3м/с"
+                },
+                {
+                    "num": "9",
+                    "temp": "+10",
+                    "press": "736",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "9.5",
+                    "temp": "+1",
+                    "press": "737",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "10",
+                    "temp": "+6",
+                    "press": "737",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 4м/с"
+                },
+                {
+                    "num": "10.5",
+                    "temp": "+1",
+                    "press": "737",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 4м/с"
+                },
+                {
+                    "num": "11",
+                    "temp": "+6",
+                    "press": "737",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 1м/с"
+                },
+                {
+                    "num": "11.5",
+                    "temp": "-2",
+                    "press": "737",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 1м/с"
+                },
+                {
+                    "num": "12",
+                    "temp": "+1",
+                    "press": "736",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "СВ 5м/с"
+                },
+                {
+                    "num": "12.5",
+                    "temp": "-2",
+                    "press": "736",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 5м/с"
+                },
+                {
+                    "num": "13",
+                    "temp": "0",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "13.5",
+                    "temp": "+1",
+                    "press": "733",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "14",
+                    "temp": "+3",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "14.5",
+                    "temp": "+1",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 2м/с"
+                },
+                {
+                    "num": "15",
+                    "temp": "+6",
+                    "press": "736",
+                    "cloud": "sunc",
+                    "extra": "",
+                    "wind": "ЮВ 1м/с"
+                },
+                {
+                    "num": "15.5",
+                    "temp": "+2",
+                    "press": "736",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "ЮВ 1м/с"
+                },
+                {
+                    "num": "16",
+                    "temp": "+8",
+                    "press": "742",
+                    "cloud": "sunc",
+                    "extra": "",
+                    "wind": "З 3м/с"
+                },
+                {
+                    "num": "16.5",
+                    "temp": "-1",
+                    "press": "743",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 3м/с"
+                },
+                {
+                    "num": "17",
+                    "temp": "+12",
+                    "press": "743",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "Ш"
+                },
+                {
+                    "num": "17.5",
+                    "temp": "+1",
+                    "press": "743",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "Ш"
+                },
+                {
+                    "num": "18",
+                    "temp": "+14",
+                    "press": "741",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 1м/с"
+                },
+                {
+                    "num": "18.5",
+                    "temp": "-1",
+                    "press": "742",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 1м/с"
+                },
+                {
+                    "num": "19",
+                    "temp": "+13",
+                    "press": "739",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "19.5",
+                    "temp": "+7",
+                    "press": "740",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "20",
+                    "temp": "+13",
+                    "press": "741",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "20.5",
+                    "temp": "-2",
+                    "press": "741",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 2м/с"
+                },
+                {
+                    "num": "21",
+                    "temp": "+7",
+                    "press": "737",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "21.5",
+                    "temp": "+2",
+                    "press": "736",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 5м/с"
+                },
+                {
+                    "num": "22",
+                    "temp": "+2",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "22.5",
+                    "temp": "+2",
+                    "press": "734",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "23",
+                    "temp": "+4",
+                    "press": "731",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "23.5",
+                    "temp": "+3",
+                    "press": "730",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "24",
+                    "temp": "+6",
+                    "press": "729",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "ЮВ 2м/с"
+                },
+                {
+                    "num": "24.5",
+                    "temp": "+6",
+                    "press": "728",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "ЮВ 2м/с"
+                },
+                {
+                    "num": "25",
+                    "temp": "+5",
+                    "press": "728",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "25.5",
+                    "temp": "+3",
+                    "press": "728",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "26",
+                    "temp": "+3",
+                    "press": "728",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "В 1м/с"
+                },
+                {
+                    "num": "26.5",
+                    "temp": "+1",
+                    "press": "728",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 1м/с"
+                },
+                {
+                    "num": "27",
+                    "temp": "+10",
+                    "press": "728",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СЗ 1м/с"
+                },
+                {
+                    "num": "27.5",
+                    "temp": "+2",
+                    "press": "730",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СЗ 1м/с"
+                },
+                {
+                    "num": "28",
+                    "temp": "+9",
+                    "press": "735",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 1м/с"
+                },
+                {
+                    "num": "28.5",
+                    "temp": "+3",
+                    "press": "737",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 1м/с"
+                },
+                {
+                    "num": "29",
+                    "temp": "+3",
+                    "press": "739",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "29.5",
+                    "temp": "+2",
+                    "press": "740",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "30",
+                    "temp": "+1",
+                    "press": "741",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "30.5",
+                    "temp": "+1",
+                    "press": "740",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "31",
+                    "temp": "+7",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 1м/с"
+                },
+                {
+                    "num": "31.5",
+                    "temp": "-1",
+                    "press": "734",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 1м/с"
+                }
+            ]
+        }
+    ]
+}

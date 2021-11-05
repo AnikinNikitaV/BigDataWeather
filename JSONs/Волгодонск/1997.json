@@ -1,0 +1,233 @@
+{
+    "num": 1997,
+    "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+            "num": 11,
+            "days": [
+                {
+                    "num": "25",
+                    "temp": "+1",
+                    "press": "759",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 6м/с"
+                },
+                {
+                    "num": "25.5",
+                    "temp": "+1",
+                    "press": "759",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 6м/с"
+                },
+                {
+                    "num": "26",
+                    "temp": "+2",
+                    "press": "757",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "26.5",
+                    "temp": "+2",
+                    "press": "757",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "27",
+                    "temp": "",
+                    "press": "",
+                    "cloud": "",
+                    "extra": "",
+                    "wind": ""
+                },
+                {
+                    "num": "27.5",
+                    "temp": "+2",
+                    "press": "755",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "Ш"
+                },
+                {
+                    "num": "28",
+                    "temp": "+3",
+                    "press": "754",
+                    "cloud": "dull",
+                    "extra": "rain",
+                    "wind": "З 3м/с"
+                },
+                {
+                    "num": "28.5",
+                    "temp": "+1",
+                    "press": "756",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 3м/с"
+                },
+                {
+                    "num": "29",
+                    "temp": "-1",
+                    "press": "759",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 1м/с"
+                },
+                {
+                    "num": "29.5",
+                    "temp": "-3",
+                    "press": "759",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "СВ 1м/с"
+                }
+            ]
+        },
+        {
+            "num": 12,
+            "days": [
+                {
+                    "num": "1",
+                    "temp": "",
+                    "press": "",
+                    "cloud": "",
+                    "extra": "",
+                    "wind": ""
+                },
+                {
+                    "num": "1.5",
+                    "temp": "-2",
+                    "press": "759",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "Ш"
+                },
+                {
+                    "num": "2",
+                    "temp": "-1",
+                    "press": "758",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 7м/с"
+                },
+                {
+                    "num": "2.5",
+                    "temp": "-3",
+                    "press": "757",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 7м/с"
+                },
+                {
+                    "num": "10",
+                    "temp": "-2",
+                    "press": "750",
+                    "cloud": "dull",
+                    "extra": "snow",
+                    "wind": "ЮЗ 4м/с"
+                },
+                {
+                    "num": "10.5",
+                    "temp": "-2",
+                    "press": "752",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "ЮЗ 4м/с"
+                },
+                {
+                    "num": "18",
+                    "temp": "-9",
+                    "press": "756",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 7м/с"
+                },
+                {
+                    "num": "18.5",
+                    "temp": "-9",
+                    "press": "754",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "З 7м/с"
+                },
+                {
+                    "num": "22",
+                    "temp": "-9",
+                    "press": "762",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "22.5",
+                    "temp": "-12",
+                    "press": "763",
+                    "cloud": "sunc",
+                    "extra": "",
+                    "wind": "В 4м/с"
+                },
+                {
+                    "num": "23",
+                    "temp": "-8",
+                    "press": "759",
+                    "cloud": "dull",
+                    "extra": "snow",
+                    "wind": "В 7м/с"
+                },
+                {
+                    "num": "23.5",
+                    "temp": "-8",
+                    "press": "759",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "В 7м/с"
+                },
+                {
+                    "num": "30",
+                    "temp": "",
+                    "press": "",
+                    "cloud": "",
+                    "extra": "",
+                    "wind": ""
+                },
+                {
+                    "num": "30.5",
+                    "temp": "0",
+                    "press": "753",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "Ш"
+                },
+                {
+                    "num": "31",
+                    "temp": "0",
+                    "press": "753",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "ЮВ 1м/с"
+                },
+                {
+                    "num": "31.5",
+                    "temp": "",
+                    "press": "",
+                    "cloud": "",
+                    "extra": "",
+                    "wind": ""
+                }
+            ]
+        }
+    ]
+}

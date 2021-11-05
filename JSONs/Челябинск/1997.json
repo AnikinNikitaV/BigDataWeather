@@ -1,0 +1,37 @@
+{
+    "num": 1997,
+    "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+            "num": 9,
+            "days": [
+                {
+                    "num": "8",
+                    "temp": "+17",
+                    "press": "768",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "СВ 3м/с"
+                },
+                {
+                    "num": "8.5",
+                    "temp": "",
+                    "press": "",
+                    "cloud": "",
+                    "extra": "",
+                    "wind": ""
+                }
+            ]
+        },
+        null,
+        null,
+        null
+    ]
+}

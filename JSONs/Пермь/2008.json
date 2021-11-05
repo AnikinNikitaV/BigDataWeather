@@ -1,0 +1,37 @@
+{
+    "num": 2008,
+    "months": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+            "num": 10,
+            "days": [
+                {
+                    "num": "28",
+                    "temp": "0",
+                    "press": "753",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "ЮЗ 3м/с"
+                },
+                {
+                    "num": "28.5",
+                    "temp": "",
+                    "press": "",
+                    "cloud": "",
+                    "extra": "",
+                    "wind": ""
+                }
+            ]
+        },
+        null,
+        null
+    ]
+}

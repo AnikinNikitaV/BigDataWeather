@@ -1,0 +1,137 @@
+{
+    "num": 2001,
+    "months": [
+        null,
+        null,
+        {
+            "num": 3,
+            "days": [
+                {
+                    "num": "7",
+                    "temp": "+3",
+                    "press": "714",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "ЮЗ 11м/с"
+                },
+                {
+                    "num": "7.5",
+                    "temp": "+3",
+                    "press": "714",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "ЮЗ 11м/с"
+                },
+                {
+                    "num": "11",
+                    "temp": "-1",
+                    "press": "732",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "З 6м/с"
+                },
+                {
+                    "num": "11.5",
+                    "temp": "-5",
+                    "press": "732",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 6м/с"
+                },
+                {
+                    "num": "12",
+                    "temp": "-1",
+                    "press": "732",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "ЮЗ 10м/с"
+                },
+                {
+                    "num": "12.5",
+                    "temp": "-2",
+                    "press": "731",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "ЮЗ 10м/с"
+                },
+                {
+                    "num": "13",
+                    "temp": "+1",
+                    "press": "728",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "Ю 5м/с"
+                },
+                {
+                    "num": "13.5",
+                    "temp": "+1",
+                    "press": "728",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "Ю 5м/с"
+                },
+                {
+                    "num": "14",
+                    "temp": "+3",
+                    "press": "730",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 7м/с"
+                },
+                {
+                    "num": "14.5",
+                    "temp": "+1",
+                    "press": "732",
+                    "cloud": "suncl",
+                    "extra": "",
+                    "wind": "З 7м/с"
+                },
+                {
+                    "num": "15",
+                    "temp": "+2",
+                    "press": "733",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "Ю 6м/с"
+                },
+                {
+                    "num": "15.5",
+                    "temp": "",
+                    "press": "",
+                    "cloud": "",
+                    "extra": "",
+                    "wind": ""
+                }
+            ]
+        },
+        null,
+        null,
+        {
+            "num": 6,
+            "days": [
+                {
+                    "num": "22",
+                    "temp": "0",
+                    "press": "727",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 3м/с"
+                },
+                {
+                    "num": "22.5",
+                    "temp": "",
+                    "press": "",
+                    "cloud": "",
+                    "extra": "",
+                    "wind": ""
+                }
+            ]
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+    ]
+}

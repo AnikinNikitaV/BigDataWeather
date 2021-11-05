@@ -1,0 +1,97 @@
+{
+    "num": 2003,
+    "months": [
+        {
+            "num": 1,
+            "days": [
+                {
+                    "num": "2",
+                    "temp": "-12",
+                    "press": "740",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "ЮВ 3м/с"
+                },
+                {
+                    "num": "2.5",
+                    "temp": "-12",
+                    "press": "738",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "ЮВ 3м/с"
+                }
+            ]
+        },
+        null,
+        null,
+        {
+            "num": 4,
+            "days": [
+                {
+                    "num": "19",
+                    "temp": "0",
+                    "press": "765",
+                    "cloud": "sun",
+                    "extra": "",
+                    "wind": "В 1м/с"
+                },
+                {
+                    "num": "19.5",
+                    "temp": "",
+                    "press": "",
+                    "cloud": "",
+                    "extra": "",
+                    "wind": ""
+                }
+            ]
+        },
+        null,
+        {
+            "num": 6,
+            "days": [
+                {
+                    "num": "8",
+                    "temp": "0",
+                    "press": "750",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "З 3м/с"
+                },
+                {
+                    "num": "8.5",
+                    "temp": "",
+                    "press": "",
+                    "cloud": "",
+                    "extra": "",
+                    "wind": ""
+                }
+            ]
+        },
+        null,
+        null,
+        {
+            "num": 9,
+            "days": [
+                {
+                    "num": "15",
+                    "temp": "0",
+                    "press": "759",
+                    "cloud": "dull",
+                    "extra": "",
+                    "wind": "Ю 4м/с"
+                },
+                {
+                    "num": "15.5",
+                    "temp": "",
+                    "press": "",
+                    "cloud": "",
+                    "extra": "",
+                    "wind": ""
+                }
+            ]
+        },
+        null,
+        null,
+        null
+    ]
+}
