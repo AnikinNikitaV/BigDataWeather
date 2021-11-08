@@ -8,10 +8,14 @@ cloud_replacements = {
     "suncl": "cloudy",
     "dull": "dull"
 }
+
+
 # Returns dictionary of day descriptions in JSON format as keys and number of occurrences as values
-def most_frequent_weather(city):
+def most_frequent_weather(city, save_dir=None):
     weather_combinations = dict()
     day_type = dict()
+    discarded = 0
+    days = 0
     for root, dirs, files in os.walk(f"../JSONs/{city}"):
         if not files:
             raise ValueError('No files to read data from')
@@ -22,13 +26,13 @@ def most_frequent_weather(city):
             # print(data)
             for month in data["months"]:
                 if month:
-                    month_numb = month["num"]
+                    # month_numb = month["num"]
                     # print(f"\nMonth {month_numb}\n")
                     for day in month["days"]:
+                        days += 1
                         # Records with missing data are discarded
                         if day["temp"] and day["temp"] != "—" \
                                 and day["cloud"] and day["cloud"] != "—" \
-                                and day["extra"] and day["extra"] != "—" \
                                 and day["wind"] and day["wind"] != "—":
                             # Building key based on record data
                             # Temperature and wind speed processed in intervals of length 5.
@@ -54,11 +58,18 @@ def most_frequent_weather(city):
                                 weather_combinations[day_type_key] = 1
                             else:
                                 weather_combinations[day_type_key] = weather_combinations[day_type_key] + 1
+                        else:
+                            discarded += 1
+    if save_dir:
+        with open(f'..{save_dir}{city} results.json', 'w', encoding='utf-8') as f:
+            json.dump(weather_combinations, f, ensure_ascii=False, indent=4)
     # print("\nWeather combinations stats:")
     print(weather_combinations)
+    print(days)
+    print(discarded)
     return weather_combinations
 
 
-most_frequent_weather("Санкт-Петербург")
+most_frequent_weather("Санкт-Петербург", save_dir="/JSONs/Results/1st task/")
 # for root, dirs, files in os.walk(f"../JSONs/Санкт-Петербург"):
 #     print(dirs)
