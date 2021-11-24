@@ -94,8 +94,8 @@ def most_frequent_weather(city, start_year=1997, end_year=2021, save_dir=None, d
 # Returns dictionary of requested weather parameters as keys and lists of year, month and mean value as values.
 # period can be "months" or "years", day_time can be "days", "nights" or "all",
 # weather_params is list with possible values "wind", "temperature" and "pressure"
-def average_values(city, period, day_time, start_year=1997, end_year=2021, weather_params=None, save_dir=None,
-                   data_source="database"):
+def periodic_average_values(city, period, day_time, start_year=1997, end_year=2021, weather_params=None, save_dir=None,
+                            data_source="database"):
     if weather_params is None:
         weather_params = []
     result = dict()
@@ -104,15 +104,6 @@ def average_values(city, period, day_time, start_year=1997, end_year=2021, weath
     pressure_results = []
     temperature_results = []
     wind_results = []
-    # for root, dirs, files in os.walk(f"../JSONs/{city}"):
-    #     if not files:
-    #         raise ValueError('No files to read data from')
-    #     for file in files:
-    #         year = int(file[:4])
-    #         # print(f"\nYEAR {year}")
-    #         if start_year < year < end_year:
-    #             with open(f'../JSONs/{city}/{file}', 'r', encoding='utf-8') as f:
-    #                 data = json.load(f)
     for year in range(start_year, end_year + 1):
         if data_source == "database":
             data = load_from_database(city, year)
@@ -140,9 +131,9 @@ def average_values(city, period, day_time, start_year=1997, end_year=2021, weath
                 for day in month["days"]:
                     days += 1
                     # Records with missing data are discarded, also checks for requested day_time
-                    if day["temp"] and day["temp"] != "—" and day["temp"] != "−"\
-                            and day["press"] and day["press"] != "—" and day["press"] != "−"\
-                            and day["wind"] and day["wind"] != "—" and day["press"] != "−"\
+                    if day["temp"] and day["temp"] != "—" and day["temp"] != "−" \
+                            and day["press"] and day["press"] != "—" and day["press"] != "−" \
+                            and day["wind"] and day["wind"] != "—" and day["press"] != "−" \
                             and (day_time == "days" and "." not in day["num"]
                                  or day_time == "nights" and "." in day["num"] or day_time == "all"):
                         period_days += 1
@@ -187,18 +178,75 @@ def average_values(city, period, day_time, start_year=1997, end_year=2021, weath
         with open(f'..{save_dir}{city} {period} {day_time} results.json', 'w', encoding='utf-8') as f:
             json.dump(result, f, ensure_ascii=False, indent=4)
     # print("\nWeather combinations stats:")
-    print(result)
     print(days)
     print(discarded)
     return result
 
 
+# Returns dictionary of requested weather parameters as keys and their mean values for specified months from beginning
+# of start_year to and end of end_year.
+def average_values(city, months=None, start_year=1997, end_year=2021, weather_params=None, save_dir=None,
+                   data_source="database"):
+    if months is None:
+        months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    if weather_params is None:
+        weather_params = ["temperature", "pressure", "wind", "clouds"]
+    result = dict()
+    days = 0
+    mean_pressure = 0
+    mean_wind = 0
+    mean_temperature = 0
+    mean_cloudy_days = 0
+    pressure_days = 0
+    temp_days = 0
+    wind_days = 0
+    for year in range(start_year, end_year + 1):
+        if data_source == "database":
+            data = load_from_database(city, year)
+        elif data_source == "files":
+            data = load_from_files(city, year)
+        else:
+            raise ValueError('Invalid argument for argument "data_source" was provided')
+        for month in data["months"]:
+            if month and int(month["num"]) in months:
+                last_cloudy_day = ""
+                # month_num = month["num"]
+                for day in month["days"]:
+                    days += 1
+                    if ("wind" in weather_params or not weather_params) \
+                            and day["wind"] and day["wind"] != "—" and day["press"] != "−":
+                        wind_days += 1
+                        if day["wind"] != "Ш":
+                            mean_wind += int(re.search(r'\d+', day["wind"]).group())
+                    if ("temperature" in weather_params or not weather_params) \
+                            and day["temp"] and day["temp"] != "—" and day["temp"] != "−":
+                        mean_temperature += int(day["temp"])
+                        temp_days += 1
+                    if ("pressure" in weather_params or not weather_params) \
+                            and day["press"] and day["press"] != "—" and day["press"] != "−":
+                        mean_pressure += int(day["press"])
+                        pressure_days += 1
+                    if "clouds" in weather_params and (day["cloud"] == "suncl" or day["cloud"] == "dull") \
+                            and last_cloudy_day != str(day["num"]).split(sep=".")[0]:
+                        last_cloudy_day = str(day["num"]).split(sep=".")[0]
+                        mean_cloudy_days += 1
+    if "pressure" in weather_params or not weather_params:
+        result["pressure"] = mean_pressure / pressure_days
+    if "temperature" in weather_params or not weather_params:
+        result["temperature"] = mean_temperature / temp_days
+    if "wind" in weather_params or not weather_params:
+        result["wind"] = mean_wind / wind_days
+    if "clouds" in weather_params or not weather_params:
+        result["clouds"] = mean_cloudy_days / (days / 2)
+    if save_dir:
+        with open(f'..{save_dir}{city} results.json', 'w', encoding='utf-8') as f:
+            json.dump(result, f, ensure_ascii=False, indent=4)
+    # print("\nWeather combinations stats:")
+    print(days)
+    return result
+
+
 # print(load_from_database("Санкт-Петербург", 2020))
-average_values("Санкт-Петербург", "years", "nights")  # , save_dir="/JSONs/Results/2nd task/")
-# for root, dirs, files in os.walk(f"../JSONs/Санкт-Петербург"):
-#     print(dirs)
-
-
-print(most_frequent_weather("Санкт-Петербург"))
-# for root, dirs, files in os.walk(f"../JSONs/Санкт-Петербург"):
-#     print(dirs)
+# print(periodic_average_values("Санкт-Петербург", "years", "nights"))  # , save_dir="/JSONs/Results/2nd task/"
+# print(most_frequent_weather("Санкт-Петербург"))
+print(average_values("Санкт-Петербург", start_year=2020, end_year=2020))
