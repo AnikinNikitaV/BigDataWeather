@@ -246,7 +246,53 @@ def average_values(city, months=None, start_year=1997, end_year=2021, weather_pa
     return result
 
 
+# Returns dictionary of month : [mean day temperature, mean night temperature]
+def day_night_temperature(city, start_year=1997, end_year=2021, save_dir=None, data_source="database"):
+    result = {
+        1: [0, 0],
+        2: [0, 0],
+        3: [0, 0],
+        4: [0, 0],
+        5: [0, 0],
+        6: [0, 0],
+        7: [0, 0],
+        8: [0, 0],
+        9: [0, 0],
+        10: [0, 0],
+        11: [0, 0],
+        12: [0, 0]
+    }
+    discarded = 0
+    days = 0
+    months_days = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    for year in range(start_year, end_year + 1):
+        if data_source == "database":
+            data = load_from_database(city, year)
+        elif data_source == "files":
+            data = load_from_files(city, year)
+        else:
+            raise ValueError('Invalid argument for argument "data_source" was provided')
+        for month in data["months"]:
+            if month:
+                month_number = int(month["num"])
+                days = month["days"]
+                for i in range(0, len(days), 2):
+                    if days[i]["temp"] and days[i]["temp"] != "—" and days[i]["temp"] != "−" \
+                            and days[i + 1]["temp"] and days[i + 1]["temp"] != "—" and days[i + 1]["temp"] != "−":
+                        months_days[month_number - 1] += 1
+                        result[month_number][0] += int(days[i]["temp"])
+                        result[month_number][1] += int(days[i + 1]["temp"])
+    for key in result.keys():
+        result[key][0] /= months_days[key - 1]
+        result[key][1] /= months_days[key - 1]
+    if save_dir:
+        with open(f'..{save_dir}{city} results.json', 'w', encoding='utf-8') as f:
+            json.dump(result, f, ensure_ascii=False, indent=4)
+    return result
+
+
 # print(load_from_database("Санкт-Петербург", 2020))
 # print(periodic_average_values("Санкт-Петербург", "years", "nights"))  # , save_dir="/JSONs/Results/2nd task/"
 # print(most_frequent_weather("Санкт-Петербург"))
-print(average_values("Санкт-Петербург", start_year=2020, end_year=2020))
+# print(average_values("Санкт-Петербург", start_year=2020, end_year=2020))
+print(day_night_temperature("Альметьевск"))
