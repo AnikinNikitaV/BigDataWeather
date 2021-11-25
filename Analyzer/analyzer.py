@@ -3,6 +3,8 @@ import os
 import re
 
 import pymongo
+import matplotlib.pyplot as plt
+import numpy as np
 
 cloud_replacements = {
     "sun": "sunny",
@@ -32,7 +34,7 @@ def load_from_database(city, year):
 
 
 # Returns sorted by value dictionary of day descriptions in JSON format as keys and number of occurrences as values
-def most_frequent_weather(city, start_year=1997, end_year=2021, save_dir=None, data_source="database"):
+def most_frequent_weather(city, start_year=1997, end_year=2021, save_dir=None, data_source="files"):
     weather_combinations = dict()
     day_type = dict()
     discarded = 0
@@ -186,7 +188,7 @@ def periodic_average_values(city, period, day_time, start_year=1997, end_year=20
 # Returns dictionary of requested weather parameters as keys and their mean values for specified months from beginning
 # of start_year to and end of end_year.
 def average_values(city, months=None, start_year=1997, end_year=2021, weather_params=None, save_dir=None,
-                   data_source="database"):
+                   data_source="files"):
     if months is None:
         months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
     if weather_params is None:
@@ -247,7 +249,7 @@ def average_values(city, months=None, start_year=1997, end_year=2021, weather_pa
 
 
 # Returns dictionary of month : [mean day temperature, mean night temperature]
-def day_night_temperature(city, start_year=1997, end_year=2021, save_dir=None, data_source="database"):
+def day_night_temperature(city, start_year=2020, end_year=2021, save_dir=None, data_source="files"):
     result = {
         1: [0, 0],
         2: [0, 0],
@@ -291,8 +293,26 @@ def day_night_temperature(city, start_year=1997, end_year=2021, save_dir=None, d
     return result
 
 
+def draw_graphics_day_night_temperature(result):
+    print(type(result))
+    day_temp = []
+    night_temp = []
+    for key in result.keys():
+        day_temp.append(result[key][0])
+        night_temp.append(result[key][1])
+    plt.plot(list(result.keys()), day_temp, label="день")
+    plt.plot(list(result.keys()), night_temp, label="ночь")
+    plt.title("День и ночь")
+    plt.xlabel("Месяц")
+    plt.ylabel("Температура")
+    plt.legend()
+    plt.show()
+
+
 # print(load_from_database("Санкт-Петербург", 2020))
 # print(periodic_average_values("Санкт-Петербург", "years", "nights"))  # , save_dir="/JSONs/Results/2nd task/"
 # print(most_frequent_weather("Санкт-Петербург"))
-# print(average_values("Санкт-Петербург", start_year=2020, end_year=2020))
-print(day_night_temperature("Альметьевск"))
+# print(average_values("Санкт-Петербург", start_year=2001, end_year=2020))
+print(day_night_temperature("Санкт-Петербург"))
+draw_graphics_day_night_temperature(day_night_temperature("Санкт-Петербург"))
+
