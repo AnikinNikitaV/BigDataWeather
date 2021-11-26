@@ -6,6 +6,8 @@ import pymongo
 import matplotlib.pyplot as plt
 import numpy as np
 
+MAX_RESULT = 8
+
 cloud_replacements = {
     "sun": "sunny",
     "sunc": "little cloudy",
@@ -93,11 +95,40 @@ def most_frequent_weather(city, start_year=1997, end_year=2021, save_dir=None, d
     return {k: v for k, v in sorted(weather_combinations.items(), key=lambda item: item[1], reverse=True)}
 
 
+def draw_graphic_most_frequent_weather(weather_combinations):
+    temp_value = []
+    temp_number_repetitions = []
+    for key in weather_combinations:
+        temp_value.append(key.replace(",", "\n"))
+        temp_number_repetitions.append(weather_combinations[key])
+    plt.bar(temp_value, temp_number_repetitions)
+    plt.show()
+
+
+def draw_graphics_most_frequent_weather(weather_combinations):
+    indicators_weather = ["clouds", "extra", "wind", "temp"]
+    for indicator in indicators_weather:
+        result = {}
+        for combination in weather_combinations:
+            number = weather_combinations[combination]
+            value = json.loads(combination)[indicator]
+            old_value = result.get(value)
+            if type(old_value) == int:
+                result[value] = number + old_value
+            else:
+                result[value] = number
+        plt.bar(list(result), list(result.values()))
+        plt.title(indicator)
+        plt.xlabel("Значение")
+        plt.ylabel("Количество повторений")
+        plt.show()
+
+
 # Returns dictionary of requested weather parameters as keys and lists of year, month and mean value as values.
 # period can be "months" or "years", day_time can be "days", "nights" or "all",
 # weather_params is list with possible values "wind", "temperature" and "pressure"
 def periodic_average_values(city, period, day_time, start_year=1997, end_year=2021, weather_params=None, save_dir=None,
-                            data_source="database"):
+                            data_source="files"):
     if weather_params is None:
         weather_params = []
     result = dict()
@@ -183,6 +214,15 @@ def periodic_average_values(city, period, day_time, start_year=1997, end_year=20
     print(days)
     print(discarded)
     return result
+
+
+def draw_graphic_periodic_average_values(average_value):
+    for indicator in average_value:
+        year, value = zip(*average_value[indicator])
+        print(year, value)
+        plt.title(indicator)
+        plt.plot(year, value)
+        plt.show()
 
 
 # Returns dictionary of requested weather parameters as keys and their mean values for specified months from beginning
@@ -293,13 +333,17 @@ def day_night_temperature(city, start_year=2020, end_year=2021, save_dir=None, d
     return result
 
 
-def draw_graphics_day_night_temperature(result):
-    print(type(result))
+def chose_day_night_temp(result):
     day_temp = []
     night_temp = []
     for key in result.keys():
         day_temp.append(result[key][0])
         night_temp.append(result[key][1])
+    return day_temp, night_temp
+
+
+def draw_graphics_day_night_temperature(result):
+    day_temp, night_temp = chose_day_night_temp(result)
     plt.plot(list(result.keys()), day_temp, label="день")
     plt.plot(list(result.keys()), night_temp, label="ночь")
     plt.title("День и ночь")
@@ -309,10 +353,43 @@ def draw_graphics_day_night_temperature(result):
     plt.show()
 
 
-# print(load_from_database("Санкт-Петербург", 2020))
-# print(periodic_average_values("Санкт-Петербург", "years", "nights"))  # , save_dir="/JSONs/Results/2nd task/"
-# print(most_frequent_weather("Санкт-Петербург"))
-# print(average_values("Санкт-Петербург", start_year=2001, end_year=2020))
-print(day_night_temperature("Санкт-Петербург"))
-draw_graphics_day_night_temperature(day_night_temperature("Санкт-Петербург"))
+def draw_graphic_temperatures_compare(first_time_start, first_time_end, second_time_start, second_time_end):
+    result_before = day_night_temperature("Санкт-Петербург", first_time_start, first_time_end)
+    result_after = day_night_temperature("Санкт-Петербург", second_time_start, second_time_end)
+    day_temp_before, night_temp_before = chose_day_night_temp(result_before)
+    day_temp_after, night_temp_after = chose_day_night_temp(result_after)
+    plt.plot(list(result_before.keys()), day_temp_before, color="royalblue",
+             label=f"день {first_time_start}-{first_time_end}", linestyle='--')
+    plt.plot(list(result_before.keys()), night_temp_before, color="navy",
+             label=f"ночь {first_time_start}-{first_time_end}", linestyle='--')
+    plt.plot(list(result_after.keys()), day_temp_after,
+             color="indianred", label=f"день {second_time_start}-{second_time_end}")
+    plt.plot(list(result_after.keys()), night_temp_after, color="red",
+             label=f"ночь {second_time_start}-{second_time_end}")
+    plt.title("День и ночь")
+    plt.xlabel("Месяц")
+    plt.ylabel("Температура")
+    plt.legend()
+    plt.show()
 
+
+# print(load_from_database("Санкт-Петербург", 2020))
+# ---------------------------task 1------------------------------
+# data_most_frequent_weather = most_frequent_weather("Санкт-Петербург", 1997, 2021, None, "files")
+# print(data_most_frequent_weather)
+# draw_graphic_most_frequent_weather(dict(list(data_most_frequent_weather.items())[:MAX_RESULT]))
+# draw_graphics_most_frequent_weather(data_most_frequent_weather)
+# ---------------------------task 2------------------------------
+# data_periodic_average_values = periodic_average_values("Санкт-Петербург", "years", "nights")
+# , save_dir="/JSONs/Results/2nd task/"
+# print(data_periodic_average_values)
+# draw_graphic_periodic_average_values(data_periodic_average_values)
+# ---------------------------task 4------------------------------
+# print(average_values("Санкт-Петербург", start_year=2001, end_year=2020))
+# ---------------------------task 5------------------------------
+# data_day_night_temperature = day_night_temperature("Санкт-Петербург")
+# print(data_day_night_temperature)
+# draw_graphics_day_night_temperature(data_day_night_temperature)
+data_before = day_night_temperature("Санкт-Петербург", 1999, 2000)
+data_after = day_night_temperature("Санкт-Петербург", 2019, 2020)
+draw_graphic_temperatures_compare(1999, 2000, 2019, 2020)
