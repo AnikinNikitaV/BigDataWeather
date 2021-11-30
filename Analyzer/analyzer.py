@@ -381,15 +381,14 @@ def draw_graphic_temperatures_compare(first_time_start, first_time_end, second_t
 # draw_graphics_most_frequent_weather(data_most_frequent_weather)
 # ---------------------------task 2------------------------------
 # data_periodic_average_values = periodic_average_values("Санкт-Петербург", "years", "nights")
-# , save_dir="/JSONs/Results/2nd task/"
-# print(data_periodic_average_values)
+# print(data_periodic_average_values)  #,save_dir="/JSONs/Results/2nd task/"
 # draw_graphic_periodic_average_values(data_periodic_average_values)
 # ---------------------------task 4------------------------------
-# print(average_values("Санкт-Петербург", start_year=2001, end_year=2020))
+print(average_values("Санкт-Петербург", start_year=2001, end_year=2020))
 # ---------------------------task 5------------------------------
-# data_day_night_temperature = day_night_temperature("Санкт-Петербург")
-# print(data_day_night_temperature)
-# draw_graphics_day_night_temperature(data_day_night_temperature)
+data_day_night_temperature = day_night_temperature("Санкт-Петербург")
+print(data_day_night_temperature)
+draw_graphics_day_night_temperature(data_day_night_temperature)
 data_before = day_night_temperature("Санкт-Петербург", 1999, 2000)
 data_after = day_night_temperature("Санкт-Петербург", 2019, 2020)
 draw_graphic_temperatures_compare(1999, 2000, 2019, 2020)
