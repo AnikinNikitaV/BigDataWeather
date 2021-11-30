@@ -27,16 +27,16 @@ def load_from_files(city, year):
                     return json.load(f)
 
 
-def load_from_database(city, year):
+def load_from_database(city, year, projection=None):
     client = pymongo.MongoClient('localhost', 27017)
     db = client['Weather']
     collection = db[f"{city}"]
-    result = collection.find_one({"num": year})
+    result = collection.find_one({"num": year}, projection)
     return result
 
 
 # Returns sorted by value dictionary of day descriptions in JSON format as keys and number of occurrences as values
-def most_frequent_weather(city, start_year=1997, end_year=2021, save_dir=None, data_source="files"):
+def most_frequent_weather(city, start_year=1997, end_year=2021, save_dir=None, data_source="database"):
     weather_combinations = dict()
     day_type = dict()
     discarded = 0
@@ -128,7 +128,7 @@ def draw_graphics_most_frequent_weather(weather_combinations):
 # period can be "months" or "years", day_time can be "days", "nights" or "all",
 # weather_params is list with possible values "wind", "temperature" and "pressure"
 def periodic_average_values(city, period, day_time, start_year=1997, end_year=2021, weather_params=None, save_dir=None,
-                            data_source="files"):
+                            data_source="database"):
     if weather_params is None:
         weather_params = []
     result = dict()
@@ -139,7 +139,9 @@ def periodic_average_values(city, period, day_time, start_year=1997, end_year=20
     wind_results = []
     for year in range(start_year, end_year + 1):
         if data_source == "database":
-            data = load_from_database(city, year)
+            data = load_from_database(city, year,
+                                      projection={"months.num": 1, "months.days.num": 1, "months.days.temp": 1,
+                                                  "months.days.press": 1, "months.days.wind": 1})
         elif data_source == "files":
             data = load_from_files(city, year)
         else:
@@ -228,7 +230,7 @@ def draw_graphic_periodic_average_values(average_value):
 # Returns dictionary of requested weather parameters as keys and their mean values for specified months from beginning
 # of start_year to and end of end_year.
 def average_values(city, months=None, start_year=1997, end_year=2021, weather_params=None, save_dir=None,
-                   data_source="files"):
+                   data_source="database"):
     if months is None:
         months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
     if weather_params is None:
@@ -289,7 +291,7 @@ def average_values(city, months=None, start_year=1997, end_year=2021, weather_pa
 
 
 # Returns dictionary of month : [mean day temperature, mean night temperature]
-def day_night_temperature(city, start_year=2020, end_year=2021, save_dir=None, data_source="files"):
+def day_night_temperature(city, start_year=2020, end_year=2021, save_dir=None, data_source="database"):
     result = {
         1: [0, 0],
         2: [0, 0],
@@ -309,7 +311,8 @@ def day_night_temperature(city, start_year=2020, end_year=2021, save_dir=None, d
     months_days = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     for year in range(start_year, end_year + 1):
         if data_source == "database":
-            data = load_from_database(city, year)
+            data = load_from_database(city, year,
+                                      projection={"months.num": 1, "months.days.num": 1, "months.days.temp": 1})
         elif data_source == "files":
             data = load_from_files(city, year)
         else:
@@ -392,3 +395,12 @@ draw_graphics_day_night_temperature(data_day_night_temperature)
 data_before = day_night_temperature("Санкт-Петербург", 1999, 2000)
 data_after = day_night_temperature("Санкт-Петербург", 2019, 2020)
 draw_graphic_temperatures_compare(1999, 2000, 2019, 2020)
+print(periodic_average_values("Санкт-Петербург", "years", "nights"))  # , save_dir="/JSONs/Results/2nd task/"
+# print(most_frequent_weather("Санкт-Петербург"))
+# print(average_values("Санкт-Петербург", start_year=2020, end_year=2020))
+# print(day_night_temperature("Альметьевск"))
+# client = pymongo.MongoClient('localhost', 27017)
+# db = client['Weather']
+# collection = db[f"Санкт-Петербург"]
+# res = collection.find_one({"num": 2020}, None)
+# print(res)
