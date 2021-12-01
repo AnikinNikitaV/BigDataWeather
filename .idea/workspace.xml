@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="049a10c9-cb1e-4e16-b431-8f75f932de43" name="Changes" comment="init draw graphics for 1 task" />
+    <list default="true" id="049a10c9-cb1e-4e16-b431-8f75f932de43" name="Changes" comment="init draw graphics for 1 task">
+      <change afterPath="$PROJECT_DIR$/Graphics/draw_graphics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analyzer/analyzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Analyzer/analyzer.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -43,7 +54,9 @@
       <workItem from="1637607468960" duration="2421000" />
       <workItem from="1637703334281" duration="3781000" />
       <workItem from="1637708723752" duration="1977000" />
-      <workItem from="1637874468039" duration="8672000" />
+      <workItem from="1637874468039" duration="9144000" />
+      <workItem from="1638262575880" duration="2752000" />
+      <workItem from="1638298338562" duration="16372000" />
     </task>
     <task id="LOCAL-00001" summary="init draw graphics for 1 task">
       <created>1637611387304</created>
@@ -63,7 +76,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
