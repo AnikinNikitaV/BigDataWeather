@@ -6,6 +6,15 @@ from analyzer import *
 MATRIX_SIZE_X = 5
 MATRIX_SIZE_Y = 5
 
+PARAMETERS_TO_RUSSIA = {
+    "clouds": "облачность",
+    "extra": "осадки",
+    "wind": "ветер",
+    "temp": "температура",
+    "pressure": "давление",
+    "temperature": "температура",
+}
+
 
 def add_unit(text, type):
     res_text = text
@@ -38,10 +47,11 @@ def draw_graphics_most_frequent_weather(city, start_year=1997, end_year=2021, sa
                 result[value] = number
             print(list(result), list(result.values()))
         plt.bar(list(result), list(result.values()))
-        plt.title(f"Наиболее популярные значения по параметру {indicator} в г. {city} за {start_year}-{end_year} год")
+        plt.title(f"Наиболее популярные значения по параметру {PARAMETERS_TO_RUSSIA[indicator]} "
+                  f"в г. {city} за {start_year}-{end_year} год")
         plt.xlabel("Значение")
         plt.ylabel("Количество повторений")
-        plt.savefig("../Results/draw_graphics_most_frequent_weather")
+        plt.savefig(f"../Results/draw_graphics_most_frequent_weather_{city}_{start_year}_{end_year}")
         plt.show()
 
 
@@ -73,7 +83,7 @@ def draw_graphic_most_frequent_weather(city, start_year=1997, end_year=2021, sav
     plt.title(f"Наиболее популярные комбинации погоды в городе {city} за {start_year} - {end_year} год")
     plt.xlabel("Комбинация погодных параметров")
     plt.ylabel("Количество повторений")
-    plt.savefig("../Results/draw_graphic_most_frequent_weather")
+    plt.savefig(f"../Results/draw_graphic_most_frequent_weather_{city}_{start_year}_{end_year}")
     plt.show()
 
 
@@ -84,12 +94,13 @@ def draw_graphic_periodic_average_values(city, period, day_time, start_year=1997
     for indicator in average_value:
         year, value = zip(*average_value[indicator])
         print(year, value)
-        plt.title(f"Изменение параметра {indicator} в г. {city} {start_year}-{end_year}, среднее значение по {period}")
+        plt.title(f"Изменение параметра {PARAMETERS_TO_RUSSIA[indicator]} в г. {city} "
+                  f"{start_year}-{end_year}")
         plt.xlabel("Год")
         label_text = add_unit("Значение", indicator)
         plt.ylabel(label_text)
         plt.plot(year, value)
-        plt.savefig(f"../Results/draw_graphic_periodic_average_values{indicator}")
+        plt.savefig(f"../Results/draw_graphic_periodic_average_values{indicator}_{city}_{start_year}_{end_year}")
         plt.show()
 
 
@@ -111,7 +122,7 @@ def draw_graphics_day_night_temperature(city, start_year=2020, end_year=2021, sa
     plt.xlabel("Месяц")
     plt.ylabel("Температура \N{DEGREE SIGN}С")
     plt.legend()
-    plt.savefig("../Results/draw_graphics_day_night_temperature")
+    plt.savefig(f"../Results/draw_graphics_day_night_temperature_{city}_{start_year}_{end_year}")
     plt.show()
 
 
@@ -134,7 +145,7 @@ def draw_graphic_temperatures_compare(city, start_year=1999, end_year=2021, save
             break
     plt.setp(axs[-1, :], xlabel='Месяц')
     plt.setp(axs[:, 0], ylabel='Температура \N{DEGREE SIGN}С')
-    plt.savefig("../Results/draw_graphic_temperatures_compare")
+    plt.savefig(f"../Results/draw_graphic_temperatures_compare_{city}_{start_year}_{end_year}")
     plt.show()
 
 
