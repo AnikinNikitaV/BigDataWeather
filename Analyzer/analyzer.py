@@ -97,35 +97,6 @@ def most_frequent_weather(city, start_year=1997, end_year=2021, save_dir=None, d
     return {k: v for k, v in sorted(weather_combinations.items(), key=lambda item: item[1], reverse=True)}
 
 
-def draw_graphic_most_frequent_weather(weather_combinations):
-    temp_value = []
-    temp_number_repetitions = []
-    for key in weather_combinations:
-        temp_value.append(key.replace(",", "\n"))
-        temp_number_repetitions.append(weather_combinations[key])
-    plt.bar(temp_value, temp_number_repetitions)
-    plt.show()
-
-
-def draw_graphics_most_frequent_weather(weather_combinations):
-    indicators_weather = ["clouds", "extra", "wind", "temp"]
-    for indicator in indicators_weather:
-        result = {}
-        for combination in weather_combinations:
-            number = weather_combinations[combination]
-            value = json.loads(combination)[indicator]
-            old_value = result.get(value)
-            if type(old_value) == int:
-                result[value] = number + old_value
-            else:
-                result[value] = number
-        plt.bar(list(result), list(result.values()))
-        plt.title(indicator)
-        plt.xlabel("Значение")
-        plt.ylabel("Количество повторений")
-        plt.show()
-
-
 # Returns dictionary of requested weather parameters as keys and lists of year, month and mean value as values.
 # period can be "months" or "years", day_time can be "days", "nights" or "all",
 # weather_params is list with possible values "wind", "temperature" and "pressure"
@@ -139,15 +110,6 @@ def periodic_average_values(city, period, day_time, start_year=1997, end_year=20
     pressure_results = []
     temperature_results = []
     wind_results = []
-    # for root, dirs, files in os.walk(f"../JSONs/{city}"):
-    #     if not files:
-    #         raise ValueError('No files to read data from')
-    #     for file in files:
-    #         year = int(file[:4])
-    #         # print(f"\nYEAR {year}")
-    #         if start_year < year < end_year:
-    #             with open(f'../JSONs/{city}/{file}', 'r', encoding='utf-8') as f:
-    #                 data = json.load(f)
     for year in range(start_year, end_year + 1):
         if data_source == "database":
             data = load_from_database(city, year)
@@ -227,15 +189,6 @@ def periodic_average_values(city, period, day_time, start_year=1997, end_year=20
     return result
 
 
-def draw_graphic_periodic_average_values(average_value):
-    for indicator in average_value:
-        year, value = zip(*average_value[indicator])
-        print(year, value)
-        plt.title(indicator)
-        plt.plot(year, value)
-        plt.show()
-
-
 # Returns dictionary of requested weather parameters as keys and their mean values for specified months from beginning
 # of start_year to and end of end_year.
 def average_values(city, months=None, start_year=1997, end_year=2021, weather_params=None, save_dir=None,
@@ -300,7 +253,7 @@ def average_values(city, months=None, start_year=1997, end_year=2021, weather_pa
 
 
 # Returns dictionary of month : [mean day temperature, mean night temperature]
-def day_night_temperature(city, start_year=2020, end_year=2021, save_dir=None, data_source="database"):
+def day_night_temperature(city, start_year=2020, end_year=2021, save_dir=None, data_source="files"):
     result = {
         1: [0, 0],
         2: [0, 0],
@@ -405,37 +358,6 @@ def chose_day_night_temp(result):
     return day_temp, night_temp
 
 
-def draw_graphics_day_night_temperature(result):
-    day_temp, night_temp = chose_day_night_temp(result)
-    plt.plot(list(result.keys()), day_temp, label="день")
-    plt.plot(list(result.keys()), night_temp, label="ночь")
-    plt.title("День и ночь")
-    plt.xlabel("Месяц")
-    plt.ylabel("Температура")
-    plt.legend()
-    plt.show()
-
-
-def draw_graphic_temperatures_compare(first_time_start, first_time_end, second_time_start, second_time_end):
-    result_before = day_night_temperature("Санкт-Петербург", first_time_start, first_time_end)
-    result_after = day_night_temperature("Санкт-Петербург", second_time_start, second_time_end)
-    day_temp_before, night_temp_before = chose_day_night_temp(result_before)
-    day_temp_after, night_temp_after = chose_day_night_temp(result_after)
-    plt.plot(list(result_before.keys()), day_temp_before, color="royalblue",
-             label=f"день {first_time_start}-{first_time_end}", linestyle='--')
-    plt.plot(list(result_before.keys()), night_temp_before, color="navy",
-             label=f"ночь {first_time_start}-{first_time_end}", linestyle='--')
-    plt.plot(list(result_after.keys()), day_temp_after,
-             color="indianred", label=f"день {second_time_start}-{second_time_end}")
-    plt.plot(list(result_after.keys()), night_temp_after, color="red",
-             label=f"ночь {second_time_start}-{second_time_end}")
-    plt.title("День и ночь")
-    plt.xlabel("Месяц")
-    plt.ylabel("Температура")
-    plt.legend()
-    plt.show()
-
-
 # print(load_from_database("Санкт-Петербург", 2020))
 with open(Path("../Crawler/cities.txt"), encoding='utf-8') as file:
     cities = file.readlines()
@@ -449,8 +371,6 @@ with open(Path("../Crawler/cities.txt"), encoding='utf-8') as file:
 # end = time.time()
 # print("Task 1 took {:.2f} seconds".format(end - start))
 # print(data_most_frequent_weather)
-# draw_graphic_most_frequent_weather(dict(list(data_most_frequent_weather.items())[:MAX_RESULT]))
-# draw_graphics_most_frequent_weather(data_most_frequent_weather)
 # ---------------------------task 2------------------------------
 # start = time.time()
 # for city in cities:
@@ -465,7 +385,6 @@ with open(Path("../Crawler/cities.txt"), encoding='utf-8') as file:
 # end = time.time()
 # print("Task 2 took {:.2f} seconds".format(end - start))
 # print(data_periodic_average_values)  #,save_dir="/JSONs/Results/2nd task/"
-# draw_graphic_periodic_average_values(data_periodic_average_values)
 # ---------------------------task 4------------------------------
 # start = time.time()
 # for city in cities:
