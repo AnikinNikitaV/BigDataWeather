@@ -109,23 +109,24 @@ def upload_all():
             col.insert_many(bulk)
             
             
+def main(download=True, save=False):
+    print("Started")
+    start = time.time()
+    if download:
+        try:
+            Path("../JSONs").mkdir(parents=True, exist_ok=True)
+        except:
+            raise ValueError('Python cant create folder')
+        with open(Path("./cities.txt"), encoding='utf-8') as file:
+            cities = file.readlines()
 
-print("Started")
-start = time.time()
-if 'download' in argv:
-    try:
-        Path("../JSONs").mkdir(parents=True, exist_ok=True)
-    except:
-        raise ValueError('Python cant create folder')
-    with open(Path("./cities.txt"), encoding='utf-8') as file:
-        cities = file.readlines()
-
-    for city in cities:
-        id, *name = city.split(' ', maxsplit = 1)
-        name = name[0].strip('\n').split(', ')[0]
-        Path(f"../JSONs/{name}").mkdir(parents=True, exist_ok=True)
-        loop = asyncio.get_event_loop()
-        loop.run_until_complete(download_all(name, id))
-if 'save' in argv:
-    upload_all()
-print("Completed. Process took: {:.2f} seconds".format(time.time() - start))
+        for city in cities:
+            id, *name = city.split(' ', maxsplit = 1)
+            name = name[0].strip('\n').split(', ')[0]
+            Path(f"../JSONs/{name}").mkdir(parents=True, exist_ok=True)
+            loop = asyncio.get_event_loop()
+            loop.run_until_complete(download_all(name, id))
+    if save:
+        #проверка на существование файлов?
+        upload_all()
+    print("Completed. Process took: {:.2f} seconds".format(time.time() - start))
