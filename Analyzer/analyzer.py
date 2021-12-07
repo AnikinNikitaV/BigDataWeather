@@ -5,8 +5,6 @@ import time
 from pathlib import Path
 
 import pymongo
-import matplotlib.pyplot as plt
-import numpy as np
 
 MAX_RESULT = 8
 
@@ -38,7 +36,7 @@ def load_from_database(city, year, projection=None):
 
 
 # Returns sorted by value dictionary of day descriptions in JSON format as keys and number of occurrences as values
-def most_frequent_weather(city, start_year=1997, end_year=2021, save_dir=None, data_source="database"):
+def most_frequent_weather(city, start_year=1997, end_year=2021, save_dir=None, data_source="files"):
     weather_combinations = dict()
     day_type = dict()
     discarded = 0
@@ -50,11 +48,11 @@ def most_frequent_weather(city, start_year=1997, end_year=2021, save_dir=None, d
             data = load_from_files(city, year)
         else:
             raise ValueError('Invalid argument for argument "data_source" was provided')
-            # print(data)
+            # #print(data)
         for month in data["months"]:
             if month:
                 # month_numb = month["num"]
-                # print(f"\nMonth {month_numb}\n")
+                # #print(f"\nMonth {month_numb}\n")
                 for day in month["days"]:
                     days += 1
                     # Records with missing data are discarded
@@ -63,7 +61,7 @@ def most_frequent_weather(city, start_year=1997, end_year=2021, save_dir=None, d
                             and day["wind"] and day["wind"] != "—":
                         # Building key based on record data
                         # Temperature and wind speed processed in intervals of length 5.
-                        # print(day)
+                        # #print(day)
                         day_type["clouds"] = cloud_replacements[day["cloud"]]
                         day_type["extra"] = day["extra"]
                         if day["wind"] == "Ш":
@@ -88,12 +86,15 @@ def most_frequent_weather(city, start_year=1997, end_year=2021, save_dir=None, d
                     else:
                         discarded += 1
     if save_dir:
-        with open(f'..{save_dir}{city} results.json', 'w', encoding='utf-8') as f:
+        if not os.path.exists('../JSONs/Results/Cache'):
+            os.mkdir('../JSONs/Results/Cache')
+            os.mkdir(f'../JSONs/Results/Cache{city}')
+        with open(f'../JSONs/Results/Cache/{city} results.json', 'w', encoding='utf-8') as f:
             json.dump(weather_combinations, f, ensure_ascii=False, indent=4)
-    # print("\nWeather combinations stats:")
-    print(weather_combinations)
-    print(days)
-    print(discarded)
+    # #print("\nWeather combinations stats:")
+    # #print(weather_combinations)
+    # #print(days)
+    # #print(discarded)
     return {k: v for k, v in sorted(weather_combinations.items(), key=lambda item: item[1], reverse=True)}
 
 
@@ -101,7 +102,7 @@ def most_frequent_weather(city, start_year=1997, end_year=2021, save_dir=None, d
 # period can be "months" or "years", day_time can be "days", "nights" or "all",
 # weather_params is list with possible values "wind", "temperature" and "pressure"
 def periodic_average_values(city, period, day_time, start_year=1997, end_year=2021, weather_params=None, save_dir=None,
-                            data_source="database"):
+                            data_source="files"):
     if weather_params is None:
         weather_params = []
     result = dict()
@@ -120,7 +121,7 @@ def periodic_average_values(city, period, day_time, start_year=1997, end_year=20
         if period == "years":
             if None in data["months"] or not data["months"]:
                 continue
-        # print(data)
+        # #print(data)
         period_days = 0
         mean_pressure = 0
         mean_wind = 0
@@ -128,7 +129,7 @@ def periodic_average_values(city, period, day_time, start_year=1997, end_year=20
         for month in data["months"]:
             if month:
                 month_num = month["num"]
-                # print(f"\nMonth {month_num}\n")
+                # #print(f"\nMonth {month_num}\n")
                 if period == "months":
                     period_days = 0
                     mean_wind = 0
@@ -143,7 +144,7 @@ def periodic_average_values(city, period, day_time, start_year=1997, end_year=20
                             and (day_time == "days" and "." not in day["num"]
                                  or day_time == "nights" and "." in day["num"] or day_time == "all"):
                         period_days += 1
-                        # print(day)
+                        # #print(day)
                         if "wind" in weather_params or not weather_params:
                             if day["wind"] != "Ш":
                                 mean_wind += int(re.search(r'\d+', day["wind"]).group())
@@ -164,7 +165,7 @@ def periodic_average_values(city, period, day_time, start_year=1997, end_year=20
                         mean_wind /= period_days
                         wind_results.append((year, month_num, mean_wind))
         if period == "years" and period_days != 0:
-            # print(f"Year {year}, {year_days} days")
+            # #print(f"Year {year}, {year_days} days")
             if "pressure" in weather_params or not weather_params:
                 mean_pressure /= period_days
                 pressure_results.append((year, mean_pressure))
@@ -181,18 +182,21 @@ def periodic_average_values(city, period, day_time, start_year=1997, end_year=20
     if "wind" in weather_params or not weather_params:
         result["wind"] = wind_results
     if save_dir:
-        with open(f'..{save_dir}{city} {period} {day_time} results.json', 'w', encoding='utf-8') as f:
+        if not os.path.exists('../JSONs/Results/Cache'):
+            os.mkdir('../JSONs/Results/Cache')
+            os.mkdir(f'../JSONs/Results/Cache{city}')
+        with open(f'../JSONs/Results/Cache/{city} {period} {day_time} results.json', 'w', encoding='utf-8') as f:
             json.dump(result, f, ensure_ascii=False, indent=4)
-    # print("\nWeather combinations stats:")
-    print(days)
-    print(discarded)
+    # #print("\nWeather combinations stats:")
+    #print(days)
+    #print(discarded)
     return result
 
 
 # Returns dictionary of requested weather parameters as keys and their mean values for specified months from beginning
 # of start_year to and end of end_year.
 def average_values(city, months=None, start_year=1997, end_year=2021, weather_params=None, save_dir=None,
-                   data_source="database"):
+                   data_source="files"):
     if months is None:
         months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
     if weather_params is None:
@@ -245,10 +249,13 @@ def average_values(city, months=None, start_year=1997, end_year=2021, weather_pa
     if "clouds" in weather_params or not weather_params:
         result["clouds"] = mean_cloudy_days / (days / 2)
     if save_dir:
-        with open(f'..{save_dir}{city} results.json', 'w', encoding='utf-8') as f:
+        if not os.path.exists('../JSONs/Results/Cache'):
+            os.mkdir('../JSONs/Results/Cache')
+            os.mkdir(f'../JSONs/Results/Cache{city}')
+        with open(f'../JSONs/Results/Cache/{city} results.json', 'w', encoding='utf-8') as f:
             json.dump(result, f, ensure_ascii=False, indent=4)
-    # print("\nWeather combinations stats:")
-    print(days)
+    # #print("\nWeather combinations stats:")
+    # #print(days)
     return result
 
 
@@ -293,12 +300,15 @@ def day_night_temperature(city, start_year=2020, end_year=2021, save_dir=None, d
         result[key][0] /= months_days[key - 1]
         result[key][1] /= months_days[key - 1]
     if save_dir:
-        with open(f'..{save_dir}{city} results.json', 'w', encoding='utf-8') as f:
+        if not os.path.exists('../JSONs/Results/Cache'):
+            os.mkdir('../JSONs/Results/Cache')
+            os.mkdir(f'../JSONs/Results/Cache{city}')
+        with open(f'../JSONs/Results/Cache/{city} results.json', 'w', encoding='utf-8') as f:
             json.dump(result, f, ensure_ascii=False, indent=4)
     return result
 
 
-def compare_city_to_climates(city, start_year=2020, end_year=2021, save_dir=None, data_source="database"):
+def compare_city_to_climates(city, start_year=2020, end_year=2021, save_dir=None, data_source="files"):
     summer_average_temp = average_values(city, [6, 7, 8], start_year, end_year, weather_params=["temperature"],
                                          save_dir=save_dir, data_source=data_source)
     summer_average_temp = summer_average_temp["temperature"]
@@ -309,7 +319,7 @@ def compare_city_to_climates(city, start_year=2020, end_year=2021, save_dir=None
                                   weather_params=["pressure", "wind", "clouds"],
                                   save_dir=save_dir, data_source=data_source)
     comparisons = []
-    with open(f'../JSONs/Результаты/Результаты.json', 'r', encoding='utf-8') as f:
+    with open(f'../Analyzer/Climate_patterns.json', 'r', encoding='utf-8') as f:
         climate_zones = json.load(f)
     climate_zones = climate_zones["climates"]
     for zone in climate_zones:
@@ -346,6 +356,8 @@ def compare_city_to_climates(city, start_year=2020, end_year=2021, save_dir=None
             elif int(zone["avg_wind_speed_max"]) < average_vals["wind"]:
                 zone_comp["avg_wind_speed_diff"] = average_vals["wind"] - int(zone["avg_wind_speed_max"])
         comparisons.append(zone_comp)
+    for el in comparisons:
+        print(el, '\n')
     return comparisons
 
 
@@ -358,7 +370,7 @@ def chose_day_night_temp(result):
     return day_temp, night_temp
 
 
-# print(load_from_database("Санкт-Петербург", 2020))
+# #print(load_from_database("Санкт-Петербург", 2020))
 with open(Path("../Crawler/cities.txt"), encoding='utf-8') as file:
     cities = file.readlines()
 # ---------------------------task 1------------------------------
@@ -366,65 +378,65 @@ with open(Path("../Crawler/cities.txt"), encoding='utf-8') as file:
 # for city in cities:
 #     _, *name = city.split(' ', maxsplit=1)
 #     name = name[0].strip('\n').split(', ')[0].replace(" ", "_")
-#     print(name)
+#     #print(name)
 #     data_most_frequent_weather = most_frequent_weather(name, 1997, 2021, None, "database")
 # end = time.time()
-# print("Task 1 took {:.2f} seconds".format(end - start))
-# print(data_most_frequent_weather)
+# #print("Task 1 took {:.2f} seconds".format(end - start))
+# #print(data_most_frequent_weather)
 # ---------------------------task 2------------------------------
 # start = time.time()
 # for city in cities:
 #     _, *name = city.split(' ', maxsplit=1)
 #     name = name[0].strip('\n').split(', ')[0].replace(" ", "_")
-#     print(name)
+#     #print(name)
 #     data_periodic_average_values = periodic_average_values(name, "years", "all", data_source="database")
 # end = time.time()
-# print("Task 2 took {:.2f} seconds".format(end - start))
+# #print("Task 2 took {:.2f} seconds".format(end - start))
 # start = time.time()
 # data_periodic_average_values = periodic_average_values("Санкт-Петербург", "years", "nights", data_source="database")
 # end = time.time()
-# print("Task 2 took {:.2f} seconds".format(end - start))
-# print(data_periodic_average_values)  #,save_dir="/JSONs/Results/2nd task/"
+# #print("Task 2 took {:.2f} seconds".format(end - start))
+# #print(data_periodic_average_values)  #,save_dir="/JSONs/Results/2nd task/"
 # ---------------------------task 4------------------------------
 # start = time.time()
 # for city in cities:
 #     _, *name = city.split(' ', maxsplit=1)
 #     name = name[0].strip('\n').split(', ')[0].replace(" ", "_")
-#     print(name)
+#     #print(name)
 #     city_climate = compare_city_to_climates(name, start_year=1997, end_year=2021)
 # end = time.time()
-# print("Task 4 took {:.2f} seconds".format(end - start))
+# #print("Task 4 took {:.2f} seconds".format(end - start))
 # start = time.time()
 # compare_city_to_climates("Санкт-Петербург", start_year=1997, end_year=2021)
 # end = time.time()
-# print("Task 4 took {:.2f} seconds".format(end - start))
-# print(average_values("Санкт-Петербург", start_year=2001, end_year=2020))
+# #print("Task 4 took {:.2f} seconds".format(end - start))
+# #print(average_values("Санкт-Петербург", start_year=2001, end_year=2020))
 # ---------------------------task 5------------------------------
 # start = time.time()
 # for city in cities:
 #     _, *name = city.split(' ', maxsplit=1)
 #     name = name[0].strip('\n').split(', ')[0].replace(" ", "_")
-#     print(name)
+#     #print(name)
 #     data_day_night_temperature = day_night_temperature("Санкт-Петербург", start_year=1997, end_year=2021,
 #                                                        data_source="database")
 # end = time.time()
-# print("Task 5 took {:.2f} seconds".format(end - start))
+# #print("Task 5 took {:.2f} seconds".format(end - start))
 # start = time.time()
 # data_day_night_temperature = day_night_temperature("Санкт-Петербург", start_year=1997, end_year=2021,
 #                                                    data_source="database")
 # end = time.time()
-# print("Task 5 took {:.2f} seconds".format(end - start))
-# print(data_day_night_temperature)
+# #print("Task 5 took {:.2f} seconds".format(end - start))
+# #print(data_day_night_temperature)
 # draw_graphics_day_night_temperature(data_day_night_temperature)
 # data_before = day_night_temperature("Санкт-Петербург", 1999, 2000)
 # data_after = day_night_temperature("Санкт-Петербург", 2019, 2020)
 # draw_graphic_temperatures_compare(1999, 2000, 2019, 2020)
-# print(periodic_average_values("Санкт-Петербург", "years", "nights"))  # , save_dir="/JSONs/Results/2nd task/"
-# print(most_frequent_weather("Санкт-Петербург"))
-# print(average_values("Санкт-Петербург", start_year=2020, end_year=2020))
-# print(day_night_temperature("Альметьевск"))
+# #print(periodic_average_values("Санкт-Петербург", "years", "nights"))  # , save_dir="/JSONs/Results/2nd task/"
+# #print(most_frequent_weather("Санкт-Петербург"))
+# #print(average_values("Санкт-Петербург", start_year=2020, end_year=2020))
+# #print(day_night_temperature("Альметьевск"))
 # client = pymongo.MongoClient('localhost', 27017)
 # db = client['Weather']
 # collection = db[f"Санкт-Петербург"]
 # res = collection.find_one({"num": 2020}, None)
-# print(res)
+# #print(res)
