@@ -43,7 +43,8 @@ def most_frequent_weather(city, start_year=1997, end_year=2021, save_dir=None, d
     days = 0
     for year in range(start_year, end_year + 1):
         if data_source == "database":
-            data = load_from_database(city, year)
+            city_name = city.replace(" ", "_")
+            data = load_from_database(city_name, year)
         elif data_source == "files":
             data = load_from_files(city, year)
         else:
@@ -375,15 +376,15 @@ def chose_day_night_temp(result):
 with open(Path("../Crawler/cities.txt"), encoding='utf-8') as file:
     cities = file.readlines()
 # ---------------------------task 1------------------------------
-# start = time.time()
-# for city in cities:
-#     _, *name = city.split(' ', maxsplit=1)
-#     name = name[0].strip('\n').split(', ')[0].replace(" ", "_")
-#     #print(name)
-#     data_most_frequent_weather = most_frequent_weather(name, 1997, 2021, None, "database")
-# end = time.time()
-# #print("Task 1 took {:.2f} seconds".format(end - start))
-# #print(data_most_frequent_weather)
+start = time.time()
+for city in cities:
+    _, *name = city.split(' ', maxsplit=1)
+    name = name[0].strip('\n').split(', ')[0]
+    print(name)
+    data_most_frequent_weather = most_frequent_weather(name, 1997, 2021, None, "database")
+end = time.time()
+#print("Task 1 took {:.2f} seconds".format(end - start))
+#print(data_most_frequent_weather)
 # ---------------------------task 2------------------------------
 # start = time.time()
 # for city in cities:
