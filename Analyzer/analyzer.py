@@ -297,8 +297,9 @@ def day_night_temperature(city, start_year=2020, end_year=2021, save_dir=None, d
                         result[month_number][0] += int(days[i]["temp"])
                         result[month_number][1] += int(days[i + 1]["temp"])
     for key in result.keys():
-        result[key][0] /= months_days[key - 1]
-        result[key][1] /= months_days[key - 1]
+        if months_days[key - 1] != 0:
+            result[key][0] /= months_days[key - 1]
+            result[key][1] /= months_days[key - 1]
     if save_dir:
         if not os.path.exists('../JSONs/Results/Cache'):
             os.mkdir('../JSONs/Results/Cache')

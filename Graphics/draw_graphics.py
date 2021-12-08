@@ -151,13 +151,16 @@ class drawer:
         for ax in axs.flat:
             # print(i, ax)
             if year < end_year:
-                result = day_night_temperature(city, year, year + 1, save_dir, data_source="files")
-                day_temp, night_temp = chose_day_night_temp(result)
-                ax.plot(list(result.keys()), day_temp)
-                ax.set_title(f"{year, year + 1}", fontsize=10, fontweight=10, pad='2.0')
-                ax.plot(list(result.keys()), night_temp)
-                ax.grid()
-                year += 1
+                try:
+                    result = day_night_temperature(city, year, year + 1, save_dir, data_source="files")
+                    day_temp, night_temp = chose_day_night_temp(result)
+                    ax.plot(list(result.keys()), day_temp)
+                    ax.set_title(f"{year, year + 1}", fontsize=10, fontweight=10, pad='2.0')
+                    ax.plot(list(result.keys()), night_temp)
+                    ax.grid()
+                    year += 1
+                except:
+                    print(year)
             else:
                 break
         plt.setp(axs[-1, :], xlabel='Месяц')
@@ -165,14 +168,15 @@ class drawer:
         plt.savefig(f"../Results/draw_graphic_temperatures_compare_{city}_{start_year}_{end_year}")
         plt.show()
 
-    def test(self):
+    def test(self, city, year1, year2):
         # ---------------------------task 1------------------------------
-        self.draw_graphic_most_frequent_weather("Санкт-Петербург", 1997, 2021, None, "files")
-        self.draw_graphics_most_frequent_weather("Санкт-Петербург", 1997, 2021, None, "files")
+        self.draw_graphic_most_frequent_weather(city, year1, year2, None, "files")
+        self.draw_graphics_most_frequent_weather(city, year1, year2, None, "files")
 
         # ---------------------------task 2------------------------------
-        self.draw_graphic_periodic_average_values("Санкт-Петербург", "years", "nights")
+        self.draw_graphic_periodic_average_values(city, "years", "days", start_year=year1, end_year=year2)
+        self.draw_graphic_periodic_average_values(city, "years", "nights", start_year=year1, end_year=year2)
 
-        # ---------------------------task 5------------------------------
-        self.draw_graphics_day_night_temperature("Санкт-Петербург")
-        self.draw_graphic_temperatures_compare("Санкт-Петербург")
+        # ---------------------------task 5------------------------------ new number: 3
+        self.draw_graphics_day_night_temperature(city, start_year=year1, end_year=year2)
+        self.draw_graphic_temperatures_compare(city, start_year=year1, end_year=year2)
