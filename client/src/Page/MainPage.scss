@@ -1,0 +1,25 @@
+.container {
+  margin: 5em 12em;
+}
+
+.container-year {
+  display: flex;
+  margin: 2em 0;
+  flex-direction: row;
+}
+
+.item-year {
+  width: 100%;
+}
+
+.item-year:first-child {
+  margin-right: 2em;
+}
+
+.item-autocomplete {
+  margin-bottom: 1em;
+}
+
+.btn-search {
+  text-align: center;
+}
