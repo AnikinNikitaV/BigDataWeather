@@ -28,7 +28,7 @@ TO_RUSSIA = {
 }
 
 
-class drawer:
+class drawer_server:
     def __init__(self):
         if not os.path.exists('../Results'):
             os.mkdir('../Results')
@@ -86,8 +86,10 @@ class drawer:
             plt.xlabel("Значение")
             plt.ylabel("Количество повторений")
             # plt.xticks(rotation=45)
+            imgdata = StringIO()
             plt.savefig(f"../Results/draw_graphics_most_frequent_weather_{city}_{start_year}_{end_year}_{indicator}")
-            plt.show()
+            data = imgdata.getvalue()
+            return data
 
     def draw_graphic_most_frequent_weather(self, city, start_year=1997, end_year=2021, save_dir=None,
                                            data_source="files"):
@@ -100,13 +102,16 @@ class drawer:
             self.create_label_from_json(key)
             temp_value.append(self.create_label_from_json(key))
             temp_number_repetitions.append(weather_combinations_sample[key])
-        plt.figure(figsize=(25, 12))
+        # plt.figure(figsize=(25, 12))
         plt.bar(temp_value, temp_number_repetitions)
         plt.title(f"Наиболее популярные комбинации погоды в городе {city} за {start_year} - {end_year} год")
         plt.xlabel("Комбинация погодных параметров")
         plt.ylabel("Количество повторений")
-        plt.savefig(f"../Results/draw_graphic_most_frequent_weather_{city}_{start_year}_{end_year}")
-        plt.show()
+        imgdata = StringIO()
+        plt.savefig(imgdata, format='svg')
+        imgdata.seek(0)
+        string = base64.b64encode(imgdata.read())
+        return urllib.parse.quote(string)
 
     def draw_graphic_periodic_average_values(self, city, period, day_time, start_year=1997, end_year=2021,
                                              weather_params=None, save_dir=None, data_source="files"):
@@ -122,6 +127,7 @@ class drawer:
             label_text = self.add_unit("Значение", indicator)
             plt.ylabel(label_text)
             plt.plot(year, value)
+            imgdata = StringIO()
             plt.savefig(f"../Results/draw_graphic_periodic_average_values{indicator}_{city}_{start_year}_{end_year}")
             plt.show()
 
