@@ -1,9 +1,8 @@
 const optionsTask = [
     {label: 'Наиболее популярные сочетания погоды', id: 'most_frequent_weather'},
+    {label: 'Наиболее популярные сочетания погоды по индикаторам', id: 'most_frequent_weather_all'},
     {label: 'Средние значения', id: 'periodic_average_values'},
-    {label: 'Среднее значение', id: 'average_values'},
     {label: 'Температуры днем и ночью', id: 'day_night_temperature'},
-    {label: 'Сравнение с климатическим поясом', id: 'compare_city_to_climates'}
 ];
 
 const optionsCity = [
