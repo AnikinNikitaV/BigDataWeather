@@ -1,6 +1,7 @@
 import sys
 import os
 import json
+import matplotlib
 
 sys.path.append('../Analyzer')
 
@@ -10,6 +11,7 @@ from analyzer import *
 
 MATRIX_SIZE_X = 5
 MATRIX_SIZE_Y = 5
+matplotlib.pyplot.switch_backend('Agg')
 
 TO_RUSSIA = {
     "clouds": "облачность",
@@ -61,6 +63,7 @@ class drawer_server:
         indicators_weather = ["clouds", "extra", "wind", "temp"]
         weather_combinations = most_frequent_weather(city, start_year=1997, end_year=2021,
                                                      save_dir=None, data_source="files")
+        res_image = []
         for indicator in indicators_weather:
             result = {}
             for combination in weather_combinations:
@@ -86,10 +89,9 @@ class drawer_server:
             plt.xlabel("Значение")
             plt.ylabel("Количество повторений")
             # plt.xticks(rotation=45)
-            imgdata = StringIO()
             plt.savefig(f"../Results/draw_graphics_most_frequent_weather_{city}_{start_year}_{end_year}_{indicator}")
-            data = imgdata.getvalue()
-            return data
+            res_image.append(f"results/draw_graphics_most_frequent_weather_{city}_{start_year}_{end_year}_{indicator}")
+        return res_image
 
     def draw_graphic_most_frequent_weather(self, city, start_year=1997, end_year=2021, save_dir=None,
                                            data_source="files"):
@@ -102,21 +104,20 @@ class drawer_server:
             self.create_label_from_json(key)
             temp_value.append(self.create_label_from_json(key))
             temp_number_repetitions.append(weather_combinations_sample[key])
-        # plt.figure(figsize=(25, 12))
+        plt.figure(figsize=(25, 12))
         plt.bar(temp_value, temp_number_repetitions)
         plt.title(f"Наиболее популярные комбинации погоды в городе {city} за {start_year} - {end_year} год")
-        plt.xlabel("Комбинация погодных параметров")
+        plt.xlabel("Значение")
         plt.ylabel("Количество повторений")
-        imgdata = StringIO()
-        plt.savefig(imgdata, format='svg')
-        imgdata.seek(0)
-        string = base64.b64encode(imgdata.read())
-        return urllib.parse.quote(string)
+        # plt.xticks(rotation=45)
+        plt.savefig(f"../Results/draw_graphic_most_frequent_weather_{city}_{start_year}_{end_year}")
+        return [f"results/draw_graphic_most_frequent_weather_{city}_{start_year}_{end_year}"]
 
     def draw_graphic_periodic_average_values(self, city, period, day_time, start_year=1997, end_year=2021,
                                              weather_params=None, save_dir=None, data_source="files"):
         average_value = periodic_average_values(city, period, day_time, start_year=1997, end_year=2021,
                                                 weather_params=None, save_dir=None, data_source="files")
+        res_image = []
         for indicator in average_value:
             year, value = zip(*average_value[indicator])
             # print(year, value)
@@ -127,9 +128,9 @@ class drawer_server:
             label_text = self.add_unit("Значение", indicator)
             plt.ylabel(label_text)
             plt.plot(year, value)
-            imgdata = StringIO()
             plt.savefig(f"../Results/draw_graphic_periodic_average_values{indicator}_{city}_{start_year}_{end_year}")
-            plt.show()
+            res_image.append(f"results/draw_graphic_periodic_average_values{indicator}_{city}_{start_year}_{end_year}")
+        return res_image
 
     def chose_day_night_temp(self, result):
         day_temp = []
@@ -151,7 +152,7 @@ class drawer_server:
         plt.ylabel("Температура \N{DEGREE SIGN}С")
         plt.legend()
         plt.savefig(f"../Results/draw_graphics_day_night_temperature_{city}_{start_year}_{end_year}")
-        plt.show()
+        return [f"results/draw_graphics_day_night_temperature_{city}_{start_year}_{end_year}"]
 
     def draw_graphic_temperatures_compare(self, city, start_year=1999, end_year=2021, save_dir=None,
                                           data_source="files"):
@@ -177,7 +178,7 @@ class drawer_server:
         plt.setp(axs[-1, :], xlabel='Месяц')
         plt.setp(axs[:, 0], ylabel='Температура \N{DEGREE SIGN}С')
         plt.savefig(f"../Results/draw_graphic_temperatures_compare_{city}_{start_year}_{end_year}")
-        plt.show()
+        return [f"results/draw_graphic_temperatures_compare_{city}_{start_year}_{end_year}"]
 
     def test(self, city, year1, year2):
         # ---------------------------task 1------------------------------
@@ -206,5 +207,5 @@ def draw_average(city, start_year=2000, end_year=2020, save_dir=None, data_sourc
         plt.xlabel("Год")
         plt.ylabel(f"Температуры \N{DEGREE SIGN}С")
         plt.savefig(f"../Results/draw_average_{city}_{start_year}_{end_year}")
-        plt.show()
+        return [f"results/draw_average_{city}_{start_year}_{end_year}"]
 
