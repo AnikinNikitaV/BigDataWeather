@@ -10,7 +10,14 @@ requirements.txt - содержит список нужных пакетов, п
 
 ## Analyzer?
 
-## Backend?
+## Backend
+Для старта сервера: 
+1) cd server 
+2) python3 manage.py runserver
 
-## Frontend?
+## Frontend
+Для старта фронтенда: 
+1) cd client
+2) npm i
+3) npm run start
 
